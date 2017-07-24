@@ -1,0 +1,21 @@
+.navbarScroll {
+	border-color: rgba(204, 204, 204, 0.33) !important;
+	background-color: white !important;
+	border-width: 0 0 1px !important;
+	
+
+	
+}
+
+.navbar-default {
+	background-color: transparent;
+	transition: background-color .5s ease-out;
+	padding: 5px;
+	border-color: transparent;
+}
+
+.container {
+	padding-left: 0px;
+	padding-right: 0px;
+	
+}
