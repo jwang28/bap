@@ -14,32 +14,23 @@
 .container {
 	padding-left: 0px;
 	padding-right: 0px;
+	font-family: "Poppins", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .navbar .navbar-brand {
   font-size: 22px;
 }
 
-.navbar-default .navbar-brand {
-	color: white;
-}
-
 .navbar-default .navbar-brand, .navbar-default .navbar-nav > li > a {
     color: white;
     font-weight: 600;
+    
 }
 
 .navbar-default .navbar-brand:hover, .navbar-default .navbar-nav > li > a:hover {
-    color: red;
+    color: rgb(181,32,36);
 }
 
-.navbarScroll .navbar-nav > li > a {
-    color: black;
-}
-.navbarScroll .navbar-brand {
-	color: black;
-}
-
-.navbar-header {
-	font-family: "Poppins", "Helvetica Neue", Helvetica, Arial, sans-serif;
+.navbarScroll .navbar-brand, .navbarScroll .navbar-nav > li > a {
+    color: #333;
 }
