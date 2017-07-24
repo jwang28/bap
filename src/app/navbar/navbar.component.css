@@ -2,20 +2,44 @@
 	border-color: rgba(204, 204, 204, 0.33) !important;
 	background-color: white !important;
 	border-width: 0 0 1px !important;
-	
-
-	
 }
 
 .navbar-default {
 	background-color: transparent;
 	transition: background-color .5s ease-out;
-	padding: 5px;
+	padding: 10px;
 	border-color: transparent;
 }
 
 .container {
 	padding-left: 0px;
 	padding-right: 0px;
-	
+}
+
+.navbar .navbar-brand {
+  font-size: 22px;
+}
+
+.navbar-default .navbar-brand {
+	color: white;
+}
+
+.navbar-default .navbar-brand, .navbar-default .navbar-nav > li > a {
+    color: white;
+    font-weight: 600;
+}
+
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-nav > li > a:hover {
+    color: red;
+}
+
+.navbarScroll .navbar-nav > li > a {
+    color: black;
+}
+.navbarScroll .navbar-brand {
+	color: black;
+}
+
+.navbar-header {
+	font-family: "Poppins", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
