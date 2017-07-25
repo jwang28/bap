@@ -1,4 +1,4 @@
-<nav  class="navbar navbar-fixed-top navbar-default"[ngClass]="{navbarScroll: isScrolled}">
+<nav  class="navbar navbar-fixed-top navbar-default"[ngClass]="{navbarScroll: isScrolled || notHome}">
   <div class="container">
     <div class="navbar-header">
       <a href="../" class="navbar-brand"><img src="../../assets/images/bap.png" height = "50" width = "50"> BAP NYU</a>
@@ -41,7 +41,7 @@
 
  
 
-<div>
+<div [ngClass] ="{routerOutlet: notHome}">
   <router-outlet></router-outlet>
 </div>
 

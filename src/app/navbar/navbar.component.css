@@ -39,3 +39,7 @@
 .navbar-brand > img {
 	display: inline;
 }
+
+.routerOutlet {
+	padding-top: 70px;
+}

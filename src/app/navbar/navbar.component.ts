@@ -15,9 +15,18 @@ export class NavbarComponent implements OnInit {
     currPos: Number = 0;
     startPos: Number = 0;
     changePos: Number = 50;
+    notHome = false;
 
 
-  constructor() { }
+  constructor(private router: Router) {
+  	router.events.subscribe((event) => {
+  		if (router.url !== '/'){
+  			this.notHome = true;
+  		}
+  	});
+
+    console.log(router.url)
+   }
 
 
   ngOnInit() {
