@@ -42,4 +42,5 @@
 
 .routerOutlet {
 	padding-top: 70px;
+	animation: fadein 2s;
 }

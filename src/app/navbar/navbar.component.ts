@@ -40,7 +40,10 @@ export class NavbarComponent implements OnInit {
             this.src = "../../assets/images/bap.png";
         } else {
             this.isScrolled = false;
-            this.src = "../../assets/images/bapWhite.png";
+            if (!this.notHome){
+            	this.src = "../../assets/images/bapWhite.png";
+            }
+            
         }
     }
 

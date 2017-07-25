@@ -1,3 +1,16 @@
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(105%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
  .image { 
  	height: 100vh !important;
  	width: 100%; 
@@ -43,6 +56,7 @@
 	max-width: 760px;
 	margin: 0 auto 70px;
 	padding: 0 15px;
+	
 }
 
 .title-modern {
@@ -50,7 +64,9 @@
   font-size: 64px;
   font-weight: 1000;
   text-shadow: 2px 2px #333;
- 
+  animation: fadein 1s;
+  animation: slideInFromBottom 1s;
+
 }
 
 h3{
@@ -61,13 +77,17 @@ h3{
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   font-family: "Cambo", "Times New Roman", serif;
+  animation: fadein 1s;
+  animation: slideInFromBottom 1s;
 }
 
 .separator {
   margin: 0 auto 20px;
-  max-width: 240px;
+  max-width: 600px;
   text-align: center;
   position: relative;
+  animation: fadein 1s;
+  animation: slideInFromBottom 1s;
 }
 
 .separator:before, .separator:after{
