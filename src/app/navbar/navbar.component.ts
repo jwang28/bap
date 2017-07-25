@@ -16,16 +16,16 @@ export class NavbarComponent implements OnInit {
     startPos: Number = 0;
     changePos: Number = 50;
     notHome = false;
+    src: String = "../../assets/images/bapWhite.png";
 
 
   constructor(private router: Router) {
   	router.events.subscribe((event) => {
   		if (router.url !== '/'){
   			this.notHome = true;
+  			this.src = "../../assets/images/bap.png";
   		}
   	});
-
-    console.log(router.url)
    }
 
 
@@ -37,14 +37,11 @@ export class NavbarComponent implements OnInit {
         if(this.currPos >= this.changePos ) {
             this.isScrolled = true;
             console.log(this.isScrolled);
+            this.src = "../../assets/images/bap.png";
         } else {
             this.isScrolled = false;
-            console.log(this.isScrolled);
+            this.src = "../../assets/images/bapWhite.png";
         }
     }
-    /*updateHeader(evt) {
-        
-            this.isScrolled = false;
-    }*/
 
 }
