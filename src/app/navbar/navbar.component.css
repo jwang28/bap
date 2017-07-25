@@ -19,6 +19,7 @@
 
 .navbar .navbar-brand {
   font-size: 22px;
+  padding-top: 0px;
 }
 
 .navbar-default .navbar-brand, .navbar-default .navbar-nav > li > a {
@@ -33,4 +34,8 @@
 
 .navbarScroll .navbar-brand, .navbarScroll .navbar-nav > li > a {
     color: #333;
+}
+
+.navbar-brand > img {
+	display: inline;
 }
