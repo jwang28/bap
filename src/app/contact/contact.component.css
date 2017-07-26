@@ -1,0 +1,17 @@
+
+div.box {
+    background-color: lightgrey;
+    width: 300px;
+    border: 25px grey;
+    padding: 25px;
+    margin: 25px;
+    position:relative;
+    top:150px;
+    left:200px;
+}
+
+body {
+background-color:black;
+background-size:100vh;
+
+}
