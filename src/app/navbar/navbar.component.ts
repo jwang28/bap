@@ -7,11 +7,13 @@ import { Router } from '@angular/router';
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.css'],
   host: {
-  	'(window:scroll)': 'updateHeader($event)'
+  	'(window:scroll)': 'updateHeader($event)',
+  	'(window:resize)': 'updateHeader($event)',
+  	'(window:onload)': 'updateHeader($event)'
   }
 })
 export class NavbarComponent implements OnInit {
-  isExpanded = false;
+  	isExpanded = false;
 	isScrolled = false;
     currPos: Number = 0;
     startPos: Number = 0;
@@ -32,18 +34,23 @@ export class NavbarComponent implements OnInit {
 
   ngOnInit() {
   }
-
+  checkExpanded() {
+  	if (window.innerWidth < 768){
+  		this.isExpanded = !this.isExpanded;
+  	}
+  }
   updateHeader(evt) {
         this.currPos = (window.pageYOffset || evt.target.scrollTop) - (evt.target.clientTop || 0);
         if(this.currPos >= this.changePos ) {
             this.isScrolled = true;
-            console.log(this.isScrolled);
             this.src = "../../assets/images/bap.png";
         } else {
             this.isScrolled = false;
+            this.isExpanded = false;
             if (!this.notHome){
             	this.src = "../../assets/images/bapWhite.png";
             }
+   
             
         }
     }

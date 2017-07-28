@@ -1,15 +1,15 @@
-<nav  class="navbar navbar-fixed-top navbar-default"[ngClass]="{navbarScroll: isScrolled || notHome}">
+<nav  class="navbar navbar-fixed-top navbar-default"[ngClass]="{navbarScroll: isScrolled || notHome, 'defaultExpanded': isExpanded}">
   <div class="container">
     <div class="navbar-header" [ngClass]="{headerPadding: isExpanded}">
       <a href="../" class="navbar-brand"><img [src]="src" height = "50" width = "50"> BAP NYU</a>
-      <button id="menu-toggle" class="navbar-toggle collapsed" (click)="isExpanded = !isExpanded" [ngClass]="{notExpanded: ! isExpanded}" type="button">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
+      <button id="menu-toggle" class="navbar-toggle collapsed" (click)="checkExpanded()" [ngClass]="{notExpanded: !isExpanded, 'toggleFocused':isExpanded}" type="button">
+        <span class="icon-bar" [ngClass]="{iconExpanded: isExpanded}"></span>
+        <span class="icon-bar" [ngClass]="{iconExpanded: isExpanded}"></span>
+        <span class="icon-bar" [ngClass]="{iconExpanded: isExpanded}"></span>
       </button>
     </div>
     <div class="navbar-collapse collapse" [ngClass]="{'in': isExpanded}">
-      <ul class="nav navbar-nav navbar-right navbar-uppercase"  (click)="isExpanded = !isExpanded" [ngClass]="{blackText: isExpanded}">
+      <ul class="nav navbar-nav navbar-right navbar-uppercase"  (click)="checkExpanded()" [ngClass]="{blackText: isExpanded}">
         <li>
           <a routerLink = "about">About</a>
         </li>
