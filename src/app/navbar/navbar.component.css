@@ -17,6 +17,11 @@
 	font-family: "Poppins", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+.headerPadding{
+	padding-bottom: 10px;
+}
+
+
 .navbar .navbar-brand {
   font-size: 22px;
   padding-top: 0px;
@@ -25,7 +30,7 @@
 .navbar-default .navbar-brand, .navbar-default .navbar-nav > li > a {
     color: white;
     font-weight: 600;
-    
+    /*need to change color of this*/
 }
 
 .navbar-default .navbar-brand:hover, .navbar-default .navbar-nav > li > a:hover {
@@ -44,3 +49,26 @@
 	padding-top: 70px;
 	animation: fadein 2s;
 }
+
+.in {
+	border: none;
+	background-color: white !important;
+	
+	padding-top: 0px;
+	animation: fadein 1s;
+	/**transition: all 1s ease-in-out*/
+}
+
+.navbar-collapse{
+	box-shadow: none;
+	text-align: center;
+}
+
+.notExpanded{
+	background-color: transparent !important;
+}
+
+.blackText{
+	color:black!important;
+}
+

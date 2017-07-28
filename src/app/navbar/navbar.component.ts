@@ -11,6 +11,7 @@ import { Router } from '@angular/router';
   }
 })
 export class NavbarComponent implements OnInit {
+  isExpanded = false;
 	isScrolled = false;
     currPos: Number = 0;
     startPos: Number = 0;
