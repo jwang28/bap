@@ -37,13 +37,24 @@ export class NavbarComponent implements OnInit {
   checkExpanded() {
   	if (window.innerWidth < 768){
   		this.isExpanded = !this.isExpanded;
+  		if (this.isExpanded || (!this.notHome && (window.pageYOffset < this.changePos))){
+  			this.src = "../../assets/images/bapWhite.png";
+  		}
+  		else{
+  			this.src = "../../assets/images/bap.png";
+  		}
   	}
   }
   updateHeader(evt) {
         this.currPos = (window.pageYOffset || evt.target.scrollTop) - (evt.target.clientTop || 0);
         if(this.currPos >= this.changePos ) {
             this.isScrolled = true;
-            this.src = "../../assets/images/bap.png";
+            if (this.isExpanded){
+            	this.src = "../../assets/images/bapWhite.png";
+            }
+            else{
+            	this.src = "../../assets/images/bap.png";
+            }
         } else {
             this.isScrolled = false;
             this.isExpanded = false;
