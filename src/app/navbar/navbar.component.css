@@ -1,55 +1,17 @@
-.navbarScroll {
-	border-color: rgba(204, 204, 204, 0.33) !important;
-	background-color: white !important;
-	border-width: 0 0 1px !important;
-}
-
-.navbar-default {
-	background-color: transparent;
-	transition: background-color .5s ease-out;
-	padding: 10px;
-	border-color: transparent;
-}
-
-/* Changes the background of navbar to bap red. optional
-.defaultExpanded {
-	background-color: rgb(181,32,36) !important;
-}*/
-
+/*navbar All*/
 .container {
 	padding-left: 0px;
 	padding-right: 0px;
 	font-family: "Poppins", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-.headerPadding{
-	padding-bottom: 10px;
-}
-
-
 .navbar .navbar-brand {
   font-size: 22px;
   padding-top: 0px;
 }
 
-.navbar-default .navbar-brand, .navbar-default .navbar-nav > li > a {
-    color: white;
-    font-weight: 600;
-    /*need to change color of this*/
-}
-
 .navbar-default .navbar-brand:hover, .navbar-default .navbar-nav > li > a:hover {
     color: rgb(181,32,36);
-}
-
-.in .navbar-nav > li > a {
-	color: black;
-}
-
-
-
-.navbarScroll .navbar-brand, .navbarScroll .navbar-nav > li > a {
-    color: #333;
 }
 
 .navbar-brand > img {
@@ -60,8 +22,41 @@
 	padding-top: 70px;
 	animation: fadein 2s;
 }
+/*navbar default*/
+.navbar-default {
+	background-color: transparent;
+	transition: background-color .5s ease-out;
+	padding: 10px;
+	border-color: transparent;
+}
 
-.in {
+.navbar-default .navbar-brand, .navbar-default .navbar-nav > li > a {
+    color: white;
+    font-weight: 600;
+}
+
+/*navbar Scroll*/
+.navbarScroll {
+	border-color: rgba(204, 204, 204, 0.33) !important;
+	background-color: white !important;
+	border-width: 0 0 1px !important;
+	box-shadow: 0px 1px 7px #777;
+}
+
+.navbarScroll .navbar-brand, .navbarScroll .navbar-nav > li > a {
+    color: #333;
+}
+
+
+/*navbar collapsed all*/
+.navbarExpanded .navbar-nav > li > a {
+	color: black;
+}
+
+.navbarExpanded .navbar-brand {
+	color: white;
+}
+.navbarExpanded .navbar-collapse {
 	border: none;
 	background-color: white !important;
 	
@@ -74,44 +69,51 @@
 	text-align: center;
 }
 
-.notExpanded{
-	background-color: transparent !important;
+.navbarExpanded .navbar-header {
+	padding-bottom: 10px;
 }
 
-.blackText{
-	color:black!important;
+.navbarExpanded {
+	background-color: rgb(181,32,36) !important;
 }
+
+
 /* toggle button*/
-.navbar-default .navbar-toggle {
-	border-color: white;
-}
-
-.navbar-default .toggleFocused {
-	border-color: black !important;
-}
-.navbar-default .navbar-toggle:hover{
-	background-color: white !important;
-}
-.navbar-default .navbar-toggle:focus {
-	background-color: white;
-}
-.navbar-default .navbar-toggle .icon-bar { 
-	background-color: white;
-}
-
-.navbar-default .navbar-toggle .iconExpanded { 
-	background-color: black;
-}
-
 .navbar-default .navbar-toggle:hover .icon-bar { 
 	background-color: black;
 }
 
-.navbarScroll .navbar-toggle .icon-bar {
-	background-color: black !important;
+.navbar-default .navbar-toggle:focus {
+	background-color: transparent;
+}
+.navbar-default .navbar-toggle {
+	border-color: white;
+}
+.navbarScroll .navbar-toggle {
+	border-color: black;
 }
 
-.navbarScroll .navbar-toggle {
-	border-color: black !important;
+.navbar-default .navbar-toggle .icon-bar { 
+	background-color: white;
 }
+.navbarScroll .navbar-toggle .icon-bar {
+	background-color: black;
+}
+
+/*toggle expanded*/
+.navbarExpanded .navbar-toggle {
+	border-color: white;
+}
+.navbar-default .navbar-toggle:hover{
+	background-color: white;
+}
+.navbarExpanded .navbar-toggle .icon-bar { 
+	background: white;
+}
+
+
+
+
+
+
 
