@@ -1,0 +1,12 @@
+<div class="form-container" id="toolbar">
+    <header [@fallIn]="state">
+    	<!-- button is null if user is logged in via email -->
+      <button (click)="logout()" class="login-button basic-btn">Logout</button>
+    </header>
+    <div id="page" [@moveInLeft]="state">
+      <h2>Hey {{ name.auth.displayName }}!</h2>
+
+      <img src="assets/images/filler.png" />
+    </div>
+    
+</div>

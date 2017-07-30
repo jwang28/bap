@@ -11,6 +11,11 @@ import { VitaComponent } from './vita/vita.component';
 import { ContactComponent } from './contact/contact.component';
 //import { ServicesComponent } from './services/services.component';
 import { HomeComponent } from './home/home.component';
+import { LoginComponent } from './login/login.component';
+import { MembersComponent } from './members/members.component';
+import { AuthGuard } from './auth.service';
+import { SignupComponent } from './signup/signup.component';
+import { EmailComponent } from './email/email.component';
 
 export const router: Routes = [
 	//{ path: '', redirectTo: 'about', pathMatch: 'full'},
@@ -22,7 +27,11 @@ export const router: Routes = [
 	{ path: 'leaders', component: LeadersComponent},
 	{ path: 'alumni', component: AlumniComponent},
 	{ path: 'vita', component: VitaComponent},
-	{ path: 'contact', component: ContactComponent}
+	{ path: 'contact', component: ContactComponent},
+    { path: 'login', component: LoginComponent },
+    { path: 'signup', component: SignupComponent },
+    { path: 'login-email', component: EmailComponent },
+    { path: 'members', component: MembersComponent, canActivate: [AuthGuard] }
 
 ];
 
