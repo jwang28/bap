@@ -49,6 +49,7 @@ export class NavbarComponent implements OnInit {
         this.currPos = (window.pageYOffset || evt.target.scrollTop) - (evt.target.clientTop || 0);
         if(this.currPos >= this.changePos ) {
             this.isScrolled = true;
+            this.isExpanded = false;
             if (this.isExpanded){
             	this.src = "../../assets/images/bapWhite.png";
             }
@@ -61,7 +62,9 @@ export class NavbarComponent implements OnInit {
             if (!this.notHome){
             	this.src = "../../assets/images/bapWhite.png";
             }
-   
+            else{
+            	this.src = "../../assets/images/bap.png";
+            }
             
         }
     }
