@@ -1,17 +1,41 @@
 
 div.box {
-    background-color: lightgrey;
+    background-color: white;
     width: 300px;
+    height:375px;
     border: 25px grey;
     padding: 25px;
-    margin: 25px;
     position:relative;
     top:150px;
-    left:200px;
+    border-radius:25px;
+    margin: auto;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
 
 body {
-background-color:black;
-background-size:100vh;
-
+	background-color: #ad3238;
 }
+
+button {
+	border-radius:4px;
+	background-color: #ad3238;
+	color: white;
+	border:10px #ad3238;
+	width:80px;
+	height:40px;
+	font-size:16px;
+}
+
+input {
+	border-radius:5px;
+	border:1px solid lightgrey;
+	padding: 3px;
+	width:250px;
+	height:35px;
+}
+
+label {
+	font-size:16px;
+}
+
+
