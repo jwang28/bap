@@ -12,6 +12,8 @@ import { moveIn, fallIn } from '../router.animations';
   host: {'[@moveIn]': ''}
 })
 export class EmailComponent implements OnInit {
+  email: string;
+  password: string;
   state: string = '';
   error: any;
   constructor(public afAuth: AngularFireAuth,private router: Router) {
