@@ -65,7 +65,7 @@ import { MembersComponent } from './members/members.component';
     AngularFireDatabaseModule,
     AngularFireAuthModule,
     FormsModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
     /*NgbModule.forRoot()*/
   ],
   providers: [AuthGuard],

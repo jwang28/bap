@@ -1,0 +1,143 @@
+.grayWrapper{
+	padding-left: 7vw;
+	padding-right: 7vw;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	display: flex;
+	flex-direction: column;
+	background: rgb(245,245,245);
+	align-items: center;
+}
+
+.whiteWrapper{
+	padding-left: 7vw;
+	padding-right: 7vw;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	display: flex;
+	flex-direction: column;
+	background: white;
+	align-items: center;
+}
+
+.header{
+	font-family: 'Raleway', sans-serif;
+	font-size: 30px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color: rgb(181,32,36);
+	align-self: center;
+	padding-bottom: 15px;
+	text-align: center;
+}
+
+.info {
+	font-family: 'Lato', sans-serif;
+	line-height: 1.5;
+	text-align: center;
+	color: #333;
+	font-size: 14px;
+}
+
+.threeCols {
+	display: flex;
+	flex-direction: row;
+	align-items: space-between;
+	flex-wrap: wrap;
+	width: 100%;
+}
+
+
+.leftCol {
+	
+	width: 30%;
+	margin-right: 5%;
+	display: flex;
+	flex-direction: column;
+}
+
+.rightCol {
+	display: flex;
+	flex-direction: column;
+	width: 30%;	
+}
+
+.header2 {
+	font-family: 'Raleway', sans-serif;
+	font-size: 17px;
+	text-transform: uppercase;
+	font-weight: 700;
+	line-height: 1.5;
+	letter-spacing: .5px;
+}
+
+.header3 {
+	font-family: 'Raleway', sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: .5px;
+	color: #444;
+}
+
+.info2{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	font-family: 'Lato', sans-serif;
+	line-height: 1.8;
+	color: #888;
+	font-size: 14px;
+}
+
+.photo {
+	padding-bottom: 10px;
+}
+
+.divider {
+	border-bottom: 2px rgb(181,32,36) solid;
+	width: 40px;
+	margin-bottom: 40px;
+}
+
+.redButton {
+	border-radius: 3px;
+	color: white;
+	border-bottom: 5px solid rgba(0,0,0,.15);
+	background-color: rgba(181,32,36,.75);
+	padding: 0 32px;
+	font-size: 18px;
+	letter-spacing: 2px;
+	height: 52px;
+	line-height: 52px;
+	cursor: pointer;
+	font-weight: 600;
+	text-transform: uppercase;
+	text-shadow: 1px 1px 1px rgba(0,0,0,.2);
+	font-family: 'Raleway',sans-serif;
+}
+
+.redButton:hover{
+	background-color: rgba(181,32,36,.55);
+}
+
+a{
+	text-decoration: none;
+	color: white;
+}
+
+@media (max-width: 768px){
+	.threeCols{
+		flex-direction: column;
+		margin-left: auto;
+		margin-right: auto;
+		width: inherit;
+	}
+	.leftCol{
+		width: 100%;
+	}
+	.rightCol{
+		width: 100%;
+	}
+	
+}
+

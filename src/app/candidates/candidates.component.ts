@@ -12,4 +12,8 @@ export class CandidatesComponent implements OnInit {
   ngOnInit() {
   }
 
+  redirect(){
+  	window.location.href = 'https://google.com';
+  }
+
 }

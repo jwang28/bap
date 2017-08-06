@@ -6,7 +6,8 @@
 
 body {
 	animation: fadein 1s;
-	background:#E2E4E6;
+	background: rgb(245,245,245);
+	font-family: 'Lato', sans-serif;
 }
 
 
