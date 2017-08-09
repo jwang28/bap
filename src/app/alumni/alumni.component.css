@@ -1,7 +1,7 @@
 .parallax {
 	display: block;
 	position: relative;
-	background: blue;
+	background: transparent;
 	z-index: 11;
 	overflow:hidden;
 	height: 100vh;
