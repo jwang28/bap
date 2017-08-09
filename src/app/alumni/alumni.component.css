@@ -1,17 +1,25 @@
-.outer{
+.parallax {
+	display: block;
+	position: relative;
+	background: blue;
+	z-index: 11;
+	overflow:hidden;
+	height: 100vh;
+}
+
+.bgDiv{
 	height: 100vh;
 	width: 100vw;
 	overflow: hidden;
 	position: relative;
-	padding: 10px 0;
 	display: block; 
 }
 
 
-.outer img{
+.bgDiv img{
 	width: 100%;
 	object-fit: cover;
-	min-height: 150vh;
+	height: 200vh;
 	position: absolute;
 	bottom: 0px;
 	object-fit: cover;
@@ -30,22 +38,35 @@
 }
 
 
-.normal {
-	display: block;
 
-	background: blue;
-	z-index: 11;
-	overflow:hidden;
-}
 
 .normal2 {
 	display: block;
 	background: white;
 	z-index: 11;
 	overflow:hidden;
-	height:1000px;
+	height:50vh;
 }
 
+.full {
+	height: 100vh !important;
+}
+/*image height must be greater than (div height) + (0.5 * scroll height) 
+ie: div height = 100vh, scroll height = 100vh => image height must be at least 150vh*/
+
+.full-img {
+	height: 150vh !important;
+}
 .half{
 	height: 50vh !important;
 }
+.half-img{
+	height: 100vh !important;
+}
+.third{
+	height: 33vh !important;
+}
+.third-img{
+	height: 83vh !important;
+}
+
