@@ -7,7 +7,7 @@ import { DomSanitizer } from '@angular/platform-browser';
   styleUrls: ['./alumni.component.css'],
   host: {
   	'(window:scroll)': 'execute($event)',
-  	'(window:onload)': 'execute($event)'
+  	'(window:load)': 'execute($event)'
   }
 })
 export class AlumniComponent implements OnInit {
@@ -27,6 +27,10 @@ export class AlumniComponent implements OnInit {
 		
 	ngOnInit() {
 		this.children = [this.ele,this.ele2];
+	}
+
+	onload(evt){
+		console.log("wow this loaded");
 	}
 
 	execute(evt){
