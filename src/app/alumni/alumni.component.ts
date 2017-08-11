@@ -1,19 +1,22 @@
 import { Component, OnInit, ElementRef, HostListener, ViewChild} from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-alumni',
   templateUrl: './alumni.component.html',
   styleUrls: ['./alumni.component.css'],
   host: {
-  	'(window:scroll)': 'execute($event)',
-  	'(window:load)': 'execute($event)'
+  	'(window:scroll)': 'execute()',
+  	'(window:load)': 'execute()',
+
+
   }
 })
 export class AlumniComponent implements OnInit {
 	 
 
-	constructor(private sanitizer: DomSanitizer, private el:ElementRef) { }
+	constructor(private sanitizer: DomSanitizer, private el:ElementRef) {}
 	  	speed: number = 0.5;
 		bottom1: string;
 		bottom2: string;
@@ -27,13 +30,10 @@ export class AlumniComponent implements OnInit {
 		
 	ngOnInit() {
 		this.children = [this.ele,this.ele2];
+		this.execute();
 	}
 
-	onload(evt){
-		console.log("wow this loaded");
-	}
-
-	execute(evt){
+	execute(){
 		console.log("onload");
 	    for (var i = 0; i < this.children.length; i++) {
 	    	
