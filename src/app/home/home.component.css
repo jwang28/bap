@@ -11,47 +11,11 @@
     transform: translateY(0);
   }
 }
- .image { 
- 	height: 100vh !important;
- 	width: 100vw; 
- 	overflow: hidden;
-    background-attachment: fixed;
-/*    background-position: relative;
-*/    background-repeat: no-repeat;
-    background-size: cover;
-    position: absolute;
-    display: block;
-    background-image: url(../../assets/images/nyc.jpg);
-    background-position: 0% 0%;
-    position: center;
+
+.text-header{
+  top: 30% !important;
 }
 
-/*.parallax {
-	width: 100%;
-	height: 100vh;
-	overflow:hidden;
-	display: block;
-}*/
-
-.filter-color-black:before{
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  display: block;
-  content: "";
-  z-index: 3;
-  opacity: .6;
-  background: #333;
-}
-
-.container > .content {
-	margin-top: 30vh;
-	position: relative;
-	z-index: 3;
-	
-}
 .subtitle {
   font-family: Raleway,sans-serif;
   font-size: 24px;
@@ -128,9 +92,7 @@ h3{
   margin-right: 10px;
 }
 
-.addPadding{
-  padding-top: 250px;
-}
+
 
 /*.separator {
   margin: 0 auto 20px;

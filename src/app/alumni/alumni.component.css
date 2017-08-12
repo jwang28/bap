@@ -70,3 +70,11 @@ ie: div height = 100vh, scroll height = 100vh => image height must be at least 1
 	height: 83vh !important;
 }
 
+.threequarters{
+	height: 75vh !important;
+}
+
+.threequarters-img{
+	height: 125vh !important;
+}
+

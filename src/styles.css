@@ -207,6 +207,7 @@ h2 {
 
 .photo {
 	padding-bottom: 10px;
+	width: 100%;
 }
 
 .divider {
@@ -286,8 +287,37 @@ button:focus{
 	position: absolute;
 	bottom: 0px;
 	object-fit: cover;
-	filter: brightness(50%);
+	filter: brightness(35%);
 	border-image-repeat: no-repeat;
+}
+
+.text{
+	z-index: 100;
+	width: 100%;
+	position: absolute;
+	text-align: center;
+	top: 50%;
+
+	font-family: Poppins,Helvetica Neue,Helvetica,Arial,sans-serif;
+	font-size: 70px;
+	font-weight: 400;
+	color: #EEE;
+	text-shadow: 2px 2px #333;
+	letter-spacing: 0.015em;
+	line-height: 1em;
+	font-style: normal;
+}
+
+
+
+
+.block {
+	display: block;
+	background: white;
+	z-index: 11;
+	overflow:hidden;
+	min-height: 300px;
+	height:auto;
 }
 
 .full {
@@ -311,3 +341,13 @@ ie: div height = 100vh, scroll height = 100vh => image height must be at least 1
 .third-img{
 	height: 83vh !important;
 }
+.threequarters{
+	height: 75vh !important;
+}
+
+.threequarters-img{
+	height: 125vh !important;
+}
+
+
+

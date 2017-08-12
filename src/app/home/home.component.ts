@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ElementRef, HostListener, ViewChild} from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
 import { Router } from '@angular/router';
 
@@ -11,7 +11,50 @@ import { Router } from '@angular/router';
   }
 })
 export class HomeComponent implements OnInit {
-setSpeed: number = 7;
+  constructor(private sanitizer: DomSanitizer, private el:ElementRef, private router: Router) {}
+    speed: number = 0.5;
+    bottom1: string;
+    bottom2: string;
+    scroll: any;
+    offset: any;
+    offsetPx: string;
+
+    @ViewChild('bgDiv1') ele: ElementRef;
+    @ViewChild('bgDiv2') ele2: ElementRef;
+    children: Array<ElementRef>;
+    
+  ngOnInit() {
+    this.children = [this.ele,this.ele2];
+    this.execute();
+  }
+
+  toLogin(){
+    this.router.navigateByUrl('/login');
+  }
+
+  execute(){
+    console.log("onload");
+      for (var i = 0; i < this.children.length; i++) {
+        
+        if((window.innerHeight -  this.children[i].nativeElement.getBoundingClientRect().top) >= 0){
+          this.scroll = (this.children[i].nativeElement.getBoundingClientRect().bottom < 0) ? 0 : (window.innerHeight - this.children[i].nativeElement.getBoundingClientRect().top);
+
+          this.offset = -this.scroll*this.speed;
+          
+          this.offsetPx = this.offset + "px";
+          
+          switch (i){
+            case 0:
+              this.bottom1 = this.offsetPx;
+              break;
+            case 1: 
+              this.bottom2 = this.offsetPx;
+          }
+        }
+      }
+  }
+
+/*setSpeed: number = 7;
 speed: any;
 scrollY: any;
 bgPos: any;
@@ -37,6 +80,6 @@ bgPos: any;
   	this.bgPos = this.sanitizer.bypassSecurityTrustStyle("0%  "+ this.speed+ "%"); 
   	console.log(this.bgPos);
 
-  }
+  }*/
 
 }

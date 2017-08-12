@@ -1,6 +1,5 @@
 import { Component, OnInit, ElementRef, HostListener, ViewChild} from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
-import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-alumni',
@@ -9,8 +8,6 @@ import { Router } from '@angular/router';
   host: {
   	'(window:scroll)': 'execute()',
   	'(window:load)': 'execute()',
-
-
   }
 })
 export class AlumniComponent implements OnInit {
