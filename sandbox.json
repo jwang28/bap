@@ -1,22 +1,90 @@
 {
-    "glossary": {
-        "title": "example glossary",
-		"GlossDiv": {
-            "title": "S",
-			"GlossList": {
-                "GlossEntry": {
-                    "ID": "SGML",
-					"SortAs": "SGML",
-					"GlossTerm": "Standard Generalized Markup Language",
-					"Acronym": "SGML",
-					"Abbrev": "ISO 8879:1986",
-					"GlossDef": {
-                        "para": "A meta-markup language, used to create markup languages such as DocBook.",
-						"GlossSeeAlso": ["GML", "XML"]
-                    },
-					"GlossSee": "markup"
-                }
-            }
-        }
-    }
+	"members": {
+		"member_unid" : {
+			"name" : "Eric He",
+			"nnum" : "N12345678",
+			"email" : "eric.he@stern.nyu.edu",
+			"netid" : "eh1885",
+			"rush_semester" : "spring_2017",
+			"status" : "member"
+		},
+		"member_unid2" : {
+			...
+		}
+	},
+	"events": {
+		"fall_2017" : {
+			"speaker" : {
+				"event_unid" : {
+				"event_name" : "Networking with Evercore",
+				"event_date" : 2017-09-01,
+				"num_points" : 2,
+				"penalty_points" : 1
+				},
+			},
+			"social" : {
+				...
+			},
+			"community" : {
+				...
+			}
+		},
+		"spring_2017" : {
+			...
+		}
+	},
+	"members_list": {
+		"fall_2017" : {
+			"member_unid" : "email",
+			"member_unid2" : "email2",
+			...
+		},
+		"spring_2017" : {
+			...
+		},
+	},
+	"attendees_list" : {
+		"fall_2017" : {
+			"event_unid" : {
+				"nnum" : "member_unid",
+				"nnum2" : "member_unid2",
+				...
+			},
+			"event_unid2" : {
+				...
+			}
+		},
+		"spring_2017" : {
+			...
+		}
+	},
+	"candidate_points" : {
+		"nnum" : {
+			"speaker" : 10,
+			"social" : 7,
+			"community" : 0,
+			"status" : "member"
+		},
+		"nnum2": {
+			"speaker" : 100,
+			"social" : 70,
+			"community" : 600,
+			"status" : "platinum"
+		}
+	},
+	"current_community_service" : {
+		"event_unid" : {
+			"num_members" : 15,
+			"cap" : 20,
+			"1" : "member_unid",
+			"2" : "member_unid3",
+			"3" : "member_unid2",
+			...
+			"15" : "member_unid5",
+			"16" : "member_unid8",
+		},
+		"event_unid2" : {
+
+		}
+	}
 }
