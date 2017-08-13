@@ -3,12 +3,20 @@
     <div #bgDiv1 class="bgDiv full" >
         <img class="full-img" src="../../assets/images/stern.jpg" [style.bottom]="bottom1">
     </div>
-    <div class="text text-header">
+    <div class="text text-header" [style.opacity]="opacity1">
 		<div class = "content">
 			<div class = "title-area">
 				
 				<div class="title-modern">Beta Alpha Psi</div>
 				<div class="subtitle">Finance and Accounting Honor Society</div>
+				<div class="separator">
+					<div class="arrow arrow-right">&#9654;</div>
+					<div class="separator-line" [style.width]="lineWidth"></div> 
+
+					<div class="star">*</div> 
+					<div class="separator-line" [style.width]="lineWidth"></div> 
+					<div class="arrow arrow-left">&#9664;</div>
+				</div>
 				<div class="button-area">
 					<button class="white-button left-button">Learn more</button>
 					<button class="white-button" (click)="toLogin()">Login</button>
@@ -53,11 +61,11 @@
 </div>
 
 
-<div class="parallax full" >
-    <div #bgDiv2 class="bgDiv full" >
-        <img class="full-img" src="../../assets/images/wsp.jpg" [style.bottom]="bottom2">
+<div class="parallax half" >
+    <div #bgDiv2 class="bgDiv half" >
+        <img class="half-img" src="../../assets/images/wsp.jpg" [style.bottom]="bottom2">
     </div>
-    <div class="text">
+    <div class="text" [style.opacity]="opacity2">
             OBJECTIVES
     </div>
 </div>

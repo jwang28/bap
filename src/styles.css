@@ -297,14 +297,12 @@ button:focus{
 	position: absolute;
 	text-align: center;
 	top: 50%;
-
 	font-family: Poppins,Helvetica Neue,Helvetica,Arial,sans-serif;
 	font-size: 70px;
 	font-weight: 400;
 	color: #EEE;
 	text-shadow: 2px 2px #333;
 	letter-spacing: 0.015em;
-	line-height: 1em;
 	font-style: normal;
 }
 

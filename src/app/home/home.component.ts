@@ -7,7 +7,8 @@ import { Router } from '@angular/router';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css'],
   host: {
-  	'(window:scroll)': 'execute($event)'
+  	'(window:scroll)': 'execute($event)',
+    '(window:resize)': 'execute($event)'
   }
 })
 export class HomeComponent implements OnInit {
@@ -18,6 +19,14 @@ export class HomeComponent implements OnInit {
     scroll: any;
     offset: any;
     offsetPx: string;
+    opacity1: any = 1;
+    opacity2: any = 1;
+    divBottom: any;
+    divTop: any;
+    div: any;
+    fadeHeight = .4;
+    width: any;
+    lineWidth: any;
 
     @ViewChild('bgDiv1') ele: ElementRef;
     @ViewChild('bgDiv2') ele2: ElementRef;
@@ -33,22 +42,32 @@ export class HomeComponent implements OnInit {
   }
 
   execute(){
-    console.log("onload");
       for (var i = 0; i < this.children.length; i++) {
-        
-        if((window.innerHeight -  this.children[i].nativeElement.getBoundingClientRect().top) >= 0){
-          this.scroll = (this.children[i].nativeElement.getBoundingClientRect().bottom < 0) ? 0 : (window.innerHeight - this.children[i].nativeElement.getBoundingClientRect().top);
+        this.divTop = this.children[i].nativeElement.getBoundingClientRect().top;
+        this.divBottom = this.children[i].nativeElement.getBoundingClientRect().bottom;
+        this.div = this.divBottom-this.divTop;
 
+
+
+        //check if top of element is scrolled in view height
+        if((window.innerHeight -  this.divTop) >= 0){
+          //check if bottom of element is still in view height
+          this.scroll = (this.divBottom < 0) ? 0 : (window.innerHeight - this.divTop);
           this.offset = -this.scroll*this.speed;
-          
           this.offsetPx = this.offset + "px";
+          this.div = this.divBottom-this.divTop;
           
           switch (i){
             case 0:
               this.bottom1 = this.offsetPx;
+              this.opacity1 = (this.divBottom-(this.div * (1-this.fadeHeight)))/(this.div * this.fadeHeight);
+              this.width = (window.innerWidth*.2) * this.opacity1;
+              this.lineWidth = this.width + "px";
+              
               break;
             case 1: 
               this.bottom2 = this.offsetPx;
+              this.opacity2 = (this.divBottom-(this.div * (1-this.fadeHeight)))/(this.div * this.fadeHeight);
           }
         }
       }

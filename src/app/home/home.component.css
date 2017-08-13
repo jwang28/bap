@@ -19,7 +19,6 @@
 .subtitle {
   font-family: Raleway,sans-serif;
   font-size: 24px;
-  margin-bottom: 20px;
 }
 .title-area{
 	color: #FFFFFF;
@@ -93,37 +92,33 @@ h3{
 }
 
 
-
-/*.separator {
-  margin: 0 auto 20px;
-  max-width: 600px;
-  text-align: center;
-  position: relative;
-  animation: fadein 1s;
-  animation: slideInFromBottom 1s;
+.separator{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
-.separator:before, .separator:after{
-	display: block;
-  width: 40%;
-  content: "";
-  margin-top: 10px;
-  border: 1px solid #c5a47e;
+.arrow{
+  margin-top: 1px;
+  font-size: 12px;
+}
+.arrow-right{
+  margin-right: -5px;
+}
+.arrow-left{
+  margin-left: -5px;
+}
+.separator-line {
+  width: 20vw;
+  border: 1px solid white;
+  height: 0px;
 }
 
-.separator:before{
-	float: left;
+.star{
+  height: 20px;
+  line-height: 20px;
+  font-size: 35px;
+  margin-top: 13px;
+  margin-left: 2%;
+  margin-right: 2%;
 }
-
-.separator:after{
-	float:right;
-}
-
-.line-separator:before{
-	border-color: white !important;
-
-}
-.line-separator:after{
-	border-color: white !important;
-
-}*/
