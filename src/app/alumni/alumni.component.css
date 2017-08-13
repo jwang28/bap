@@ -1,0 +1,80 @@
+.parallax {
+	display: block;
+	position: relative;
+	background: transparent;
+	z-index: 11;
+	overflow:hidden;
+	height: 100vh;
+}
+
+.bgDiv{
+	height: 100vh;
+	width: 100vw;
+	overflow: hidden;
+	position: relative;
+	display: block; 
+}
+
+
+.bgDiv img{
+	width: 100%;
+	object-fit: cover;
+	height: 200vh;
+	position: absolute;
+	bottom: 0px;
+	object-fit: cover;
+	filter: brightness(50%);
+	border-image-repeat: no-repeat;
+}
+
+.text{
+	font-size: 40px;
+	color: white;
+	z-index: 100;
+	width: 100%;
+	position: absolute;
+	text-align: center;
+	top: 50%;
+}
+
+
+
+
+.normal2 {
+	display: block;
+	background: white;
+	z-index: 11;
+	overflow:hidden;
+	height:50vh;
+}
+
+.full {
+	height: 100vh !important;
+}
+/*image height must be greater than (div height) + (0.5 * scroll height) 
+ie: div height = 100vh, scroll height = 100vh => image height must be at least 150vh*/
+
+.full-img {
+	height: 150vh !important;
+}
+.half{
+	height: 50vh !important;
+}
+.half-img{
+	height: 100vh !important;
+}
+.third{
+	height: 33vh !important;
+}
+.third-img{
+	height: 83vh !important;
+}
+
+.threequarters{
+	height: 75vh !important;
+}
+
+.threequarters-img{
+	height: 125vh !important;
+}
+

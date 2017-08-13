@@ -1,41 +1,102 @@
-<div class="parallax" >
-	<div class="image filter-color-black" [style.backgroundPosition]="bgPos"></div>
-	<div class ="container">
+
+<div class="parallax full">
+    <div #bgDiv1 class="bgDiv full" >
+        <img class="full-img" src="../../assets/images/stern.jpg" [style.bottom]="bottom1">
+    </div>
+    <div class="text text-header" [style.opacity]="opacity1">
 		<div class = "content">
 			<div class = "title-area">
-				<h1 class="title-modern">Beta Alpha Psi</h1>
-				<h3>Finance and Accounting Honor Society</h3>
-				<div class="separator line-separator">♦</div>
+				
+				<div class="title-modern">Beta Alpha Psi</div>
+				<div class="subtitle">Finance and Accounting Honor Society</div>
+				<div class="separator">
+					<div class="arrow arrow-right">&#9654;</div>
+					<div class="separator-line" [style.width]="lineWidth"></div> 
+
+					<div class="star">*</div> 
+					<div class="separator-line" [style.width]="lineWidth"></div> 
+					<div class="arrow arrow-left">&#9664;</div>
+				</div>
+				<div class="button-area">
+					<button class="white-button left-button">Learn more</button>
+					<button class="white-button" (click)="toLogin()">Login</button>
+				</div>
 				
 			</div>
 		</div>
-	</div>
-
+    </div>
 </div>
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br>text here<br><br><br><br><br>
-	
-<!-- 
- <div class="section section-header">
-    <div class="parallax filter filter-color-black">
-        <div class="image"
-            style="background-image: url('../../assets/images/nyc.jpg')">
-        </div>
-        <div class="container">
-            <div class="content">
-                <div class="title-area">
-                   
-                    <h1 class="title-modern">NYU STERN | Mu Chapter</h1>
-                    <h3>Finance and Accounting Honor Society</h3>
-                    <div class="separator line-separator">♦</div>
-                </div>
-                
 
-            </div>
 
-        </div>
+<div class="whiteWrapper">
+	<div class="header">
+		About
+	</div>
+	<div class="divider"></div>
+	<div class="threeCols" id="about">
+
+		<div class="leftCol">
+			<div><img class="photo" src="../../assets/images/about1.jpg"></div>
+			<div class="header2">SPRING 2017 RUSH EVENTS</div>
+			<div class="info2">
+				Join Beta Alpha Psi Today! See our events page which highlights our rush week schedule and events!
+			</div>
+		</div>
+		<div class="leftCol">
+			<div><img class="photo" src="../../assets/images/bapreview.jpg"></div>
+			<div class="header2">Bap Review 2017</div>
+			<div class="info2">
+				Read the latest edition of BAP Review, which contains articles about student life, navigating NYC, and current BAP initiatives.
+			</div>
+		</div>
+		<div class="rightCol">
+			<div><img class="photo" src="../../assets/images/meetLeaders.png"></div>
+			<div class="header2">Meet the Leaders</div>
+			<div class="info2">
+				Learn more about our Executive Board, Committees, and Members by visiting our leaders page. 
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="parallax half" >
+    <div #bgDiv2 class="bgDiv half" >
+        <img class="half-img" src="../../assets/images/wsp.jpg" [style.bottom]="bottom2">
     </div>
-</div> -->
+    <div class="text" [style.opacity]="opacity2">
+            OBJECTIVES
+    </div>
+</div>
 
-    
+<div class="whiteWrapper">
+	<div class="header">
+		About
+	</div>
+	<div class="divider"></div>
+	<div class="threeCols" id="about">
+
+		<div class="leftCol">
+			<div><img class="photo" src="../../assets/images/about1.jpg"></div>
+			<div class="header2">SPRING 2017 RUSH EVENTS</div>
+			<div class="info2">
+				Join Beta Alpha Psi Today! See our events page which highlights our rush week schedule and events!
+			</div>
+		</div>
+		<div class="leftCol">
+			<div><img class="photo" src="../../assets/images/bapreview.jpg"></div>
+			<div class="header2">Bap Review 2017</div>
+			<div class="info2">
+				Read the latest edition of BAP Review, which contains articles about student life, navigating NYC, and current BAP initiatives.
+			</div>
+		</div>
+		<div class="rightCol">
+			<div><img class="photo" src="../../assets/images/meetLeaders.png"></div>
+			<div class="header2">Meet the Leaders</div>
+			<div class="info2">
+				Learn more about our Executive Board, Committees, and Members by visiting our leaders page. 
+			</div>
+		</div>
+	</div>
+</div>
