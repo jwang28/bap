@@ -13,7 +13,7 @@ import { Router } from '@angular/router';
 })
 export class HomeComponent implements OnInit {
   constructor(private sanitizer: DomSanitizer, private el:ElementRef, private router: Router) {}
-    speed: number = 0.5;
+    speed: number = 0.3;
     bottom1: string;
     bottom2: string;
     scroll: any;
@@ -27,6 +27,7 @@ export class HomeComponent implements OnInit {
     fadeHeight = .4;
     width: any;
     lineWidth: any;
+    setWidth: any = .2;
 
     @ViewChild('bgDiv1') ele: ElementRef;
     @ViewChild('bgDiv2') ele2: ElementRef;
@@ -42,7 +43,9 @@ export class HomeComponent implements OnInit {
   }
 
   execute(){
+    if (window.innerWidth > 768){
       for (var i = 0; i < this.children.length; i++) {
+        console.log("calc header");
         this.divTop = this.children[i].nativeElement.getBoundingClientRect().top;
         this.divBottom = this.children[i].nativeElement.getBoundingClientRect().bottom;
         this.div = this.divBottom-this.divTop;
@@ -50,18 +53,22 @@ export class HomeComponent implements OnInit {
 
 
         //check if top of element is scrolled in view height
-        if((window.innerHeight -  this.divTop) >= 0){
+
+        if((window.innerHeight -  this.divTop) >= 0 && ((window.innerHeight-this.divTop) < (window.innerHeight+this.div))){
           //check if bottom of element is still in view height
           this.scroll = (this.divBottom < 0) ? 0 : (window.innerHeight - this.divTop);
           this.offset = -this.scroll*this.speed;
           this.offsetPx = this.offset + "px";
           this.div = this.divBottom-this.divTop;
+
+          //length of separators in title
+          this.setWidth = (window.innerWidth < 768) ? .4 : .2;
           
           switch (i){
             case 0:
               this.bottom1 = this.offsetPx;
               this.opacity1 = (this.divBottom-(this.div * (1-this.fadeHeight)))/(this.div * this.fadeHeight);
-              this.width = (window.innerWidth*.2) * this.opacity1;
+              this.width = (window.innerWidth* this.setWidth) * this.opacity1;
               this.lineWidth = this.width + "px";
               
               break;
@@ -69,8 +76,11 @@ export class HomeComponent implements OnInit {
               this.bottom2 = this.offsetPx;
               this.opacity2 = (this.divBottom-(this.div * (1-this.fadeHeight)))/(this.div * this.fadeHeight);
           }
+          console.log("div 1 is: " + this.bottom1);
+          console.log("div 2 is: " + this.bottom2);
         }
       }
+    }
   }
 
 /*setSpeed: number = 7;

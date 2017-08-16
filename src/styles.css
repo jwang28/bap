@@ -201,13 +201,25 @@ h2 {
 	padding-bottom: 20px;
 	font-family: 'Lato', sans-serif;
 	line-height: 1.8;
-	color: #888;
+	color: #333;
 	font-size: 14px;
 }
 
 .photo {
 	padding-bottom: 10px;
 	width: 100%;
+}
+
+.photo2 {
+	padding-bottom: 30px;
+	width: 25%;
+	margin-left: auto;
+	margin-right: auto;
+	display:block;
+}
+
+.center {
+	align-self: center;
 }
 
 .divider {

@@ -13,7 +13,7 @@
 }
 
 .text-header{
-  top: 30% !important;
+  top: 35% !important;
 }
 
 .subtitle {
@@ -42,7 +42,7 @@
   
   animation: fadein 1s;
   animation: slideInFromBottom 1s;
-  text-transform: uppercase;
+ /* text-transform: uppercase;*/
   letter-spacing: 0.015em;
   line-height: 1em;
   font-style: normal;
@@ -117,8 +117,8 @@ h3{
 .star{
   height: 20px;
   line-height: 20px;
-  font-size: 35px;
-  margin-top: 13px;
+  font-size: 20px;
+  margin-top: -1px;
   margin-left: 2%;
   margin-right: 2%;
 }

@@ -23,7 +23,7 @@
 }
 
 .routerOutlet {
-	/*padding-top: 70px;*/
+	padding-top: 70px;
 	animation: fadein 2s;
 }
 /*navbar default*/
