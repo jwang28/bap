@@ -1,6 +1,9 @@
+
+
+
 <div class="grayWrapper">
 	<div class="header">
-		WELCOME (NAME)
+		WELCOME, (NAME)
 	</div>
 	<div class="info">
 		
@@ -9,41 +12,68 @@
 <div class="whiteWrapper">
 	<div class="threeCols">
 		<div class="leftCol">
-			<div><img class="photo" src="../../assets/images/Professionallogo.png"></div>
-			<div class="header2">Upcomming Events</div>
-			<div class="header3">Check out the upcomming professional and volunteering events</div>
-			<div class="info2">
-				 
-			</div>
+			<div class="pointsnumber">12</div>
+			<div class="header2">Professional Points</div>
+			<br>
+
+            <button type="button" class="hbutton"
+                (click)="HiddenPE = !HiddenPE">Click here to see events
+            </button>
+            <div [hidden]="HiddenPE" class="PE">
+                 <div class="ProfEvent">
+                  *Bolded are events you have attended<br>
+                   Aug 1, 2017 - Event 1<br>
+                   Aug 2, 2017 - Event 2<br>
+                   Aug 3, 2017 - Event 3<br>
+                   Aug 4, 2017 - Event 4<br>
+                   Aug 5, 2017 - Event 5<br>
+                   
+                 </div>
+           	</div>
+
+
 		</div>
 		<div class="leftCol">
-			<div><img class="photo" src="../../assets/images/Points.png"></div>
-			<div class="header2">Your current points</div>
-			<div class="header3">See your current candidate status</div>
-			<div class="info2">
-				 
-			</div>
+			<div class="pointsnumber">8</div>
+			<div class="header2">Social Points</div>
+			<br>
+
+            <button type="button" class="hbutton"
+                (click)="HiddenSE = !HiddenSE">Click here to see events
+            </button>
+            <div [hidden]="HiddenSE" class="SE">
+                 <div class="SocEvent">
+                 *Bolded are events you have attended<br>
+                   Aug 1, 2017 - Event 1<br>
+                   Aug 2, 2017 - Event 2<br>
+                   Aug 3, 2017 - Event 3<br>
+                   Aug 4, 2017 - Event 4<br>
+                   Aug 5, 2017 - Event 5
+                 </div>
+           	</div>
 		</div>
+
+
+
 		<div class="rightCol">
-			<div><img class="photo" src="../../assets/images/Volunteer.png"></div>
-			<div class="header2">Community Service</div>
-			<div class="header3">Sign up for community service events</div>
-			<div class="info2">
-				
-			</div>
+			<div class="pointsnumber">9</div>
+			<div class="header2">Community Service Points</div>
+			<br>
+
+            <button type="button" class="hbutton"
+                (click)="HiddenCS = !HiddenCS">Click here to see events
+            </button>
+            <div [hidden]="HiddenCS" class="CS">
+                 <div class="SocEvent">
+                 *Bolded are events you have attended<br>
+                   Aug 1, 2017 - Event 1<br>
+                   Aug 2, 2017 - Event 2<br>
+                   Aug 3, 2017 - Event 3<br>
+                   Aug 4, 2017 - Event 4<br>
+                   Aug 5, 2017 - Event 5
+                 </div>
+           	</div>
 		</div>
 	</div>
 </div>
 
-<div class="grayWrapper">
-	<div class="header">
-		Talk to the E-board
-	</div>
-	<div class="threeCols">
-		<div class="leftCol">
-			<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdzy5uBYvmU7_wjjhPIMpWNsMM7YPNURRG8a-EZCbgUUzI3Pw/viewform?embedded=true" width="900" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
-		</div>
-		
-	
-	</div>
-</div>
