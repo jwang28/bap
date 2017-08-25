@@ -7,6 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LeadersComponent implements OnInit {
 
+HiddenPE: boolean=true;
+HiddenSE: boolean=true;
+HiddenCS: boolean=true;
+
+
   constructor() { }
 
   ngOnInit() {

@@ -1,3 +1,28 @@
+.pointsnumber {
+	font-size:100px;
+	color:rgb(181,32,36);
+}
+
+
+.red {
+    color: red; 
+}
+
+.black {
+    color: black;
+}
+
+.hbutton {
+	border-radius:4px;
+	background-color: #ad3238;
+	color: white;
+	border:10px #ad3238;
+	width:250px;
+	height:50px;
+	font-size:16px;
+
+}
+
 .grayWrapper{
 	padding-left: 7vw;
 	padding-right: 7vw;
@@ -92,7 +117,8 @@
 .photo {
 	padding-bottom: 10px;
 	height:150px;
-	width:150px;
+	width:145px;
+	position: relative;
 }
 
 .divider {
