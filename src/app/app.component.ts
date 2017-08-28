@@ -11,5 +11,5 @@ import * as firebase from 'firebase/app';
 })
 
 export class AppComponent {
-  title = 'This finally works!';
+  title: string = "this works!";
 }

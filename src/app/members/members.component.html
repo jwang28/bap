@@ -4,9 +4,72 @@
       <button (click)="logout()" class="login-button basic-btn">Logout</button>
     </header>
     <div id="page" [@moveInLeft]="state">
-      <h2>Welcome {{ name.displayName }}!</h2>
 
-      <img src="assets/images/filler.png" />
-    </div>
-    
+      <!-- <img src="assets/images/filler.png" /> -->
+     <!--  <p *ngFor = "let item of items | async">
+      	{{item.name}}
+      </p> -->
+
+      <!-- <p *ngFor = "let item of professional_attended | async">
+      	{{item.$value}}
+      </p>
+     -->
+	
+		<div class="header">WELCOME, {{ name.displayName }}!</div>
+		
+
+		<div class="whiteWrapper noPadding">
+			<div class="threeCols">
+				<div class="leftCol">
+					<div class="pointsnumber center"> {{ (member | async)?.points_pe}} </div>
+					<div class="header2 center">Professional Points</div>
+
+		            <button type="button" class="hbutton center" (click)="hiddenPE = !hiddenPE">Click here to see events</button>
+		            <div [hidden]="hiddenPE" class="PE">
+		                 <div class="paddingTop centerText">
+		                  	<b>*Attended Events</b><br>
+		                  	<div *ngFor = "let item of professional_attended | async">{{ item.$value }}</div> <br>
+				            <b>*Unattended Events</b><br>
+				            <div *ngFor = "let item of professional_unattended | async">{{item.$value}}</div>
+		                 </div>
+		           	</div>
+
+
+				</div>
+				<div class="leftCol">
+					<div class="pointsnumber center"> {{ (member | async)?.points_se}} </div>
+					<div class="header2 center">Social Points</div>
+		            <button type="button" class="hbutton center"
+		                (click)="hiddenSE = !hiddenSE">Click here to see events
+		            </button>
+		            <div [hidden]="hiddenSE" class="SE">
+		                 <div class="paddingTop centerText">
+		                 	<b>*Attended Events</b><br>
+		                  	<div *ngFor = "let item of social_attended | async">{{ item.$value }}</div> <br>
+				            <b>*Unattended Events</b><br>
+				            <div *ngFor = "let item of social_unattended | async">{{item.$value}}</div>
+		                 </div>
+		           	</div>
+				</div>
+
+
+
+				<div class="rightCol">
+					<div class="pointsnumber center">{{ (member | async)?.points_ce}}</div>
+					<div class="header2 center">Community Service Points</div>
+		            <button type="button" class="hbutton center"
+		                (click)="hiddenCS = !hiddenCS">Click here to see events
+		            </button>
+		            <div [hidden]="hiddenCS" class="CS">
+		                 <div class="paddingTop centerText">
+		                	<b>*Attended Events</b><br>
+		                  	<div *ngFor = "let item of community_attended | async">{{ item.$value }}</div> <br>
+				            <b>*Unattended Events</b><br>
+				            <div *ngFor = "let item of community_unattended | async">{{item.$value}}</div>
+		                 </div>
+		           	</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
