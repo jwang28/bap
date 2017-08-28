@@ -4,16 +4,6 @@
       <button (click)="logout()" class="login-button basic-btn">Logout</button>
     </header>
     <div id="page" [@moveInLeft]="state">
-
-      <!-- <img src="assets/images/filler.png" /> -->
-     <!--  <p *ngFor = "let item of items | async">
-      	{{item.name}}
-      </p> -->
-
-      <!-- <p *ngFor = "let item of professional_attended | async">
-      	{{item.$value}}
-      </p>
-     -->
 	
 		<div class="header">WELCOME, {{ name.displayName }}!</div>
 		
@@ -24,7 +14,7 @@
 					<div class="pointsnumber center"> {{ (member | async)?.points_pe}} </div>
 					<div class="header2 center">Professional Points</div>
 
-		            <button type="button" class="hbutton center" (click)="hiddenPE = !hiddenPE">Click here to see events</button>
+		            <button type="button" class="redButton smallFont center" (click)="hiddenPE = !hiddenPE">Click to see events</button>
 		            <div [hidden]="hiddenPE" class="PE">
 		                 <div class="paddingTop centerText">
 		                  	<b>*Attended Events</b><br>
@@ -39,8 +29,8 @@
 				<div class="leftCol">
 					<div class="pointsnumber center"> {{ (member | async)?.points_se}} </div>
 					<div class="header2 center">Social Points</div>
-		            <button type="button" class="hbutton center"
-		                (click)="hiddenSE = !hiddenSE">Click here to see events
+		            <button type="button" class="redButton smallFont center"
+		                (click)="hiddenSE = !hiddenSE">Click to see events
 		            </button>
 		            <div [hidden]="hiddenSE" class="SE">
 		                 <div class="paddingTop centerText">
@@ -57,8 +47,8 @@
 				<div class="rightCol">
 					<div class="pointsnumber center">{{ (member | async)?.points_ce}}</div>
 					<div class="header2 center">Community Service Points</div>
-		            <button type="button" class="hbutton center"
-		                (click)="hiddenCS = !hiddenCS">Click here to see events
+		            <button type="button" class="redButton smallFont center"
+		                (click)="hiddenCS = !hiddenCS">Click to see events
 		            </button>
 		            <div [hidden]="hiddenCS" class="CS">
 		                 <div class="paddingTop centerText">
