@@ -11,16 +11,16 @@ body {
 	background-color: rgb(161,36,32);
 }
 
-div.container{
-	 position:relative;
-  	 top:50px;
-   	 margin: auto;
-   	 left:100px;
-     padding-bottom: 50%;
-     padding-top: 30px;
-     overflow: hidden;
-     margin: auto;
- }
+.threeCols {
+  display: flex;
+  flex-direction: row;
+  align-items: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+
+
 
 .mv-daynames-table {
   color: yellow;
