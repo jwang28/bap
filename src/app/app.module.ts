@@ -8,6 +8,7 @@ import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { AngularFireAuthModule } from 'angularfire2/auth';
 import { AuthGuard } from './auth.service';
 import { FormsModule } from '@angular/forms';
+import { CarouselModule,GrowlModule } from 'primeng/primeng';
 
 export const firebaseConfig = {
   apiKey: "AIzaSyAjHLHK6AE4bmufEk2oCV6578WVUAMdvUo",
@@ -68,7 +69,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     AngularFireAuthModule,
     FormsModule,
     BrowserAnimationsModule,
-    /*NgbModule.forRoot()*/
+    CarouselModule,
+    GrowlModule
   ],
   providers: [AuthGuard],
   bootstrap: [AppComponent]
