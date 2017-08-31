@@ -222,6 +222,10 @@ h2 {
 	align-self: center;
 }
 
+.centerText{
+	text-align: center;
+}
+
 .divider {
 	border-bottom: 2px rgb(181,32,36) solid;
 	width: 40px;
@@ -359,5 +363,8 @@ ie: div height = 100vh, scroll height = 100vh => image height must be at least 1
 	height: 125vh !important;
 }
 
+button {
+	border: none;
+}
 
 

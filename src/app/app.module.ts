@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { NgModule } from '@angular/core';
+import { NgModule,Pipe, PipeTransform } from '@angular/core';
 import { routes } from './app.router';
 import {HttpModule} from '@angular/http';
 import { AngularFireModule } from 'angularfire2';
@@ -9,6 +9,7 @@ import { AngularFireAuthModule } from 'angularfire2/auth';
 import { AuthGuard } from './auth.service';
 import { FormsModule } from '@angular/forms';
 import { CarouselModule,GrowlModule } from 'primeng/primeng';
+import {MyFilterPipe} from './myfilter';
 
 export const firebaseConfig = {
   apiKey: "AIzaSyAjHLHK6AE4bmufEk2oCV6578WVUAMdvUo",
@@ -58,7 +59,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     EmailComponent,
     SignupComponent,
     MembersComponent,
-    DashboardComponent
+    DashboardComponent,
+    MyFilterPipe
   ],
   imports: [
     BrowserModule,

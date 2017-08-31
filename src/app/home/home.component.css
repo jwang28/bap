@@ -78,7 +78,7 @@ h3{
   height: 52px;
   line-height: 52px;
   margin-top: 15px;
-
+  background: transparent;
 }
 
 .white-button:hover{

@@ -1,117 +1,103 @@
-
-<p-growl [value]="msgs"></p-growl>
-
-<p-carousel headerText="Cars" [value]="cars">
-    <ng-template let-car pTemplate="item">
-        <div class="ui-grid ui-grid-responsive">
-            <div class="ui-grid-row">
-                <div class="ui-grid-col-12"><img src="../../assets/images/{{car.brand}}.png" width="60"></div>
-            </div>
-            <div class="ui-grid-row">
-                <div class="ui-grid-col-6">Vin</div>
-                <div class="ui-grid-col-6">{{car.vin}}</div>
-            </div>
-            <div class="ui-grid-row">
-                <div class="ui-grid-col-6">Year</div>
-                <div class="ui-grid-col-6">{{car.year}}</div>
-            </div>
-            <div class="ui-grid-row">
-                <div class="ui-grid-col-6">Color</div>
-                <div class="ui-grid-col-6">{{car.color}}</div>
-            </div>
-            <div class="ui-grid-row">
-                <div class="ui-grid-col-12">
-                    <button type="button" pButton icon="fa-search" (click)="selectCar(car)"></button>
-                </div>
-            </div>
-        </div>
-    </ng-template>
-</p-carousel>
-
-
-
 <div class="grayWrapper">
-	<div class="header center">
-		Leaders
-	</div>
-	<div class="info">
-		
-	</div>
+  <div class="header center">
+    Leaders
+  </div>
+  <div class="divider"></div>
 </div>
+
 <div class="whiteWrapper">
-	<div class="threeCols">
-		<div class="leftCol">
-			<div class="pointsnumber">12</div>
-			<div class="header2">Professional Points</div>
-			<br>
-
-            <button type="button" class="hbutton"
-                (click)="HiddenPE = !HiddenPE">Click here to see events
-            </button>
-            <div [hidden]="HiddenPE" class="PE">
-                 <div class="ProfEvent">
-                  <b>*Attended Events</b><br>
-                   Aug 1, 2017 - Event 1<br>
-                   Aug 2, 2017 - Event 2<br>
-                   Aug 3, 2017 - Event 3<br>
-                   Aug 4, 2017 - Event 4<br>
-                   Aug 5, 2017 - Event 5<br>
-                   
-                 </div> <br><br>
-                 <div class="ProfEvent">
-                  <b>*Unattended Events</b><br>
-                   Aug 6, 2017 - Event 6<br>
-                   Aug 7, 2017 - Event 7<br>
-                   Aug 8, 2017 - Event 8<br>
-                   Aug 9, 2017 - Event 9<br>
-                   Aug 10, 2017 - Event 10<br>
-                   
-                 </div>
-           	</div>
-
-
-		</div>
-		<div class="leftCol">
-			<div class="pointsnumber">8</div>
-			<div class="header2">Social Points</div>
-			<br>
-
-            <button type="button" class="hbutton"
-                (click)="HiddenSE = !HiddenSE">Click here to see events
-            </button>
-            <div [hidden]="HiddenSE" class="SE">
-                 <div class="SocEvent">
-                 *Bolded are events you have attended<br>
-                   Aug 1, 2017 - Event 1<br>
-                   Aug 2, 2017 - Event 2<br>
-                   Aug 3, 2017 - Event 3<br>
-                   Aug 4, 2017 - Event 4<br>
-                   Aug 5, 2017 - Event 5
-                 </div>
-           	</div>
-		</div>
-
-
-
-		<div class="rightCol">
-			<div class="pointsnumber">9</div>
-			<div class="header2">Community Service Points</div>
-			<br>
-
-            <button type="button" class="hbutton"
-                (click)="HiddenCS = !HiddenCS">Click here to see events
-            </button>
-            <div [hidden]="HiddenCS" class="CS">
-                 <div class="SocEvent">
-                 *Bolded are events you have attended<br>
-                   Aug 1, 2017 - Event 1<br>
-                   Aug 2, 2017 - Event 2<br>
-                   Aug 3, 2017 - Event 3<br>
-                   Aug 4, 2017 - Event 4<br>
-                   Aug 5, 2017 - Event 5
-                 </div>
-           	</div>
-		</div>
-	</div>
+  <div class="header4 center lineBreak">Eboard</div>
+  <div class="cols">
+    <div class="leftCol five">
+      <div class="img__wrap">
+        <img class="photo" src="../../assets/images/profile/Sami.jpg">
+        <div class="img__description_layer">
+          <p class="img__description">Sami is a Senior studying Finance and Economcis. Sami is originally from Long Island but grew up in Newburgh, NY. His interests include playing guitar, traveling, watching and playing most sports, and lifting. During his past summer he worked at Signal Hill, a Technology Investment bank, and is returning as a full-time analyst.</p>
+        </div>
+      </div>
+      <div class="header3 center">Sami Siddiqui</div>
+      <div class="header3 center"><b>President</b></div>
+    </div>
+    <div class="leftCol five">
+      <div class="img__wrap">
+        <img class="photo" src="../../assets/images/profile/Nancy.jpg">
+        <div class="img__description_layer">
+          <p class="img__description">Nancy is a senior studying Finance and Statistics. She was born in Inner Mongolia, China, but mostly grew up in San Antonio, Texas. In her free time, she enjoys painting, hiking, trying to catch up on 14 seasons of Grey's Anatomy, using Korean sheet masks, and online shopping. Her past work experience includes accounting, merchandise buying, and operational risk management. This past summer, she interned with the TMT Credit group at J.P. Morgan and will be returning full-time. </p>
+        </div>
+      </div>
+      <div class="header3 center">Nancy Ding</div>
+      <div class="header3 center"><b>Vice President</b></div>
+    </div>
+    <div class="leftCol five">
+      <div class="img__wrap">
+        <img class="photo" src="../../assets/images/profile/David.jpg">
+        <div class="img__description_layer">
+          <p class="img__description">David Labine is a Senior studying Actuarial Science and Finance with a minor in Mathematics. He is from the small town of Tiverton, Rhode Island. In his free time, David enjoys doing yoga, long walks by the rivers, and watching Tom Brady break NFL records. During previous summers, he has worked on international trade for the Belgian Embassy in Tel Aviv, and held actuarial positions at AmTrust Financial Services, MIB Group, and Deloitte Consulting.</p>
+        </div>
+      </div>
+      <div class="header3 center">David Labine</div>
+      <div class="header3 center centerText"><b>Director of Correspondence</b></div>
+    </div>
+    <div class="leftCol five">
+      <div class="img__wrap">
+        <img class="photo" src="../../assets/images/profile/Michelle.jpg">
+        <div class="img__description_layer">
+          <p class="img__description">Michelle Xie is a Senior studying Finance and Accounting. She is originally from Montville, New Jersey. In her free time, she enjoys long-distance running, hiking, cooking, and finding places to eat in the city. During her past summer, she worked interned at PwC in core assurance. </p>
+        </div>
+      </div>
+      <div class="header3 center">Michelle Xie</div>
+      <div class="header3 center"><b>Director of Reporting</b></div>
+    </div>
+    <div class="rightCol five rightCol">
+      <div class="img__wrap">
+        <img class="photo" src="../../assets/images/profile/Yipu.jpg">
+        <div class="img__description_layer">
+          <p class="img__description">Yi is a Senior studying Finance and Statistics. He was originally born in China but grew up in New Jersey. His interests include exploring restaurants, karaoke, comedy shows, and spending time with friends and family. This summer, he was a Credit Risk Summer Analyst at Morgan Stanley.</p>
+        </div>
+      </div>
+      <div class="header3 center">YiPu Lin</div>
+      <div class="header3 center"><b>Treasurer</b></div>
+    </div>
+  </div>
 </div>
 
+<div class = "filterWrapper"> 
+  <div class="header2 filterLabel font22">Display Committees By: </div>
+    <div class="">
+    <select class="form-control" 
+      [value]="pipeFilter" 
+      (input)="pipeFilter = $event.target.value">
+      Display Committees By2: 
+        <option value="">All Committees</option>
+        <option value="1">Candidate Master</option>
+        <option value="2">Community Service</option>
+        <option value="3">Marketing</option>
+        <option value="4">Mentoring</option>
+        <option value="5">Newsletter</option>
+        <option value="6">Social Events</option>
+        <option value="7">Speaker Events</option>
+        <option value="8">Special Events</option>
+        <option value="9">Technology</option>
+        <option value="10">Tutoring</option>
+        <option value="11">VITA</option>
+        <option value="12">Workshop</option>
+    </select>
+    </div>
+</div>
+<div class="graySection">
+
+   <div class = "four" *ngFor="let data of pipeFilterData | myfilter: pipeFilter">
+     <div class="header3 centerText">
+        <div class="img__wrap">
+          <img class="picture" src="../../assets/images/profile/{{data.firstName}}.jpg" />
+          <div class="img__description_layer">
+            <p class="img__description">{{data.bio}}</p>
+          </div>
+        </div>
+        {{data.firstName}} {{data.lastName}} <br><b>{{data.position}}</b><br>
+
+     </div>
+    <!--   <div><img class="photo round" src="../../assets/images/blank_profile.png"></div> -->
+    
+  </div>
+</div>
