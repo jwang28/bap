@@ -11,15 +11,6 @@ body {
 	background-color: rgb(161,36,32);
 }
 
-.threeCols {
-  display: flex;
-  flex-direction: row;
-  align-items: space-between;
-  flex-wrap: wrap;
-  width: 100%;
-}
-
-
 
 
 .mv-daynames-table {
