@@ -44,19 +44,21 @@
   <router-outlet></router-outlet>
 </div>
 
-<div class="footer">
-  <div>
-    Copyrights © 2017. All Rights Reserved.<br>
-    NYU Beta Alpha Psi | Mu Chapter
-  </div>
-  <div class="social">
-    <div class="social-icons">
-      <a href="https://www.facebook.com/bapnyu" target="_blank"><img class="social-icon" src="../../assets/images/fb.svg"></a>
-      <a href="https://www.instagram.com/bapnyu/" target="_blank"><img class="social-icon" src="../../assets/images/instagram.svg"></a>
-      <a href="https://www.youtube.com/user/BAPMuChapter" target="_blank"><img class="social-icon" src="../../assets/images/youtube.svg"></a>
-      <a href="https://twitter.com/bapnyu" target="_blank"><img class="social-icon" src="../../assets/images/twitter.svg"></a>
+<div [hidden]="hideFooter">
+  <div  class="footer" >
+    <div>
+      Copyrights © 2017. All Rights Reserved.<br>
+      NYU Beta Alpha Psi | Mu Chapter
     </div>
-    <div class="email"><a href="mailto:bap@stern.nyu.edu?Subject=BAP Inquiry" target="_top">Email: bap@stern.nyu.edu</a></div>
+    <div class="social">
+      <div class="social-icons">
+        <a href="https://www.facebook.com/bapnyu" target="_blank"><img class="social-icon" src="../../assets/images/fb.svg"></a>
+        <a href="https://www.instagram.com/bapnyu/" target="_blank"><img class="social-icon" src="../../assets/images/instagram.svg"></a>
+        <a href="https://www.youtube.com/user/BAPMuChapter" target="_blank"><img class="social-icon" src="../../assets/images/youtube.svg"></a>
+        <a href="https://twitter.com/bapnyu" target="_blank"><img class="social-icon" src="../../assets/images/twitter.svg"></a>
+      </div>
+      <div class="email"><a href="mailto:bap@stern.nyu.edu?Subject=BAP Inquiry" target="_top">Email: bap@stern.nyu.edu</a></div>
+    </div>
   </div>
 </div>
 

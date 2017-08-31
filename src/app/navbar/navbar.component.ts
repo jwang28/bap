@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
   host: {
   	'(window:scroll)': 'updateHeader($event)',
   	'(window:resize)': 'updateHeader($event)',
-  	'(window:onload)': 'updateHeader($event)'
+  	'(window:onload)': 'updateHeader($event)',
   }
 })
 export class NavbarComponent implements OnInit {
@@ -20,6 +20,7 @@ export class NavbarComponent implements OnInit {
     changePos: Number = 50;
     notHome = false;
     src: String = "../../assets/images/bapWhite.png";
+    hideFooter: boolean=false;
 
 
   constructor(private router: Router) {
@@ -28,6 +29,12 @@ export class NavbarComponent implements OnInit {
   			this.notHome = true;
   			this.src = "../../assets/images/bap.png";
   		}
+      if (router.url == '/login'){
+        this.hideFooter = true;
+      }
+      else {
+        this.hideFooter = false;
+      }
   	});
    }
 

@@ -17,7 +17,18 @@ body {
     width:500px;
     position:fixed;
     left:50%;
-    margin-left:-250px;
+    margin-left:-250px; 
+    overflow: scroll !important;
+}
+
+.form-containerz {
+    background:white;
+    padding:3.5em;
+    width:500px;
+    display: block;
+    position: center;
+    /*display: flex;
+    flex-direction: row;*/
 }
 
 .login-button {

@@ -28,18 +28,28 @@ export class HomeComponent implements OnInit {
     width: any;
     lineWidth: any;
     setWidth: any = .2;
+    aboutTop: any;
 
     @ViewChild('bgDiv1') ele: ElementRef;
     @ViewChild('bgDiv2') ele2: ElementRef;
+    @ViewChild('about') ele3: ElementRef;
     children: Array<ElementRef>;
     
   ngOnInit() {
     this.children = [this.ele,this.ele2];
     this.execute();
+    this.aboutTop = this.ele3.nativeElement.getBoundingClientRect().top;
   }
 
   toLogin(){
     this.router.navigateByUrl('/login');
+  }
+
+  scrollDown(){
+   
+    this.aboutTop = window.pageYOffset + this.ele3.nativeElement.getBoundingClientRect().top - 50;
+    window.scrollTo(0,this.aboutTop);
+
   }
 
   execute(){
@@ -82,33 +92,4 @@ export class HomeComponent implements OnInit {
       }
     }
   }
-
-/*setSpeed: number = 7;
-speed: any;
-scrollY: any;
-bgPos: any;
-  constructor(private sanitizer: DomSanitizer, private router: Router) {}
-
-  ngOnInit() {
-  }
-
-  toLogin(){
-    this.router.navigateByUrl('/login');
-  }
-  
-  execute(evt){
-  	console.log(window.scrollY.valueOf());
-  	this.scrollY = window.scrollY.valueOf();
-  	if (this.scrollY === 0){
-  		this.speed = 0;
-  	}
-  	else{
-  		this.speed = this.scrollY/this.setSpeed;
-  	}
-  	console.log("speed is: " + this.speed);
-  	this.bgPos = this.sanitizer.bypassSecurityTrustStyle("0%  "+ this.speed+ "%"); 
-  	console.log(this.bgPos);
-
-  }*/
-
 }
