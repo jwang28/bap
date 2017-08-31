@@ -21,11 +21,12 @@ export const router: Routes = [
 	//{ path: '', redirectTo: 'about', pathMatch: 'full'},
 	//add in null or random chars path
 	{ path: '', component: HomeComponent},
+	{ path: 'home', component: HomeComponent},
 	{ path: 'about', component: AboutComponent},
 	{ path: 'events', component: EventsComponent},
 	{ path: 'candidates', component: CandidatesComponent},
 	{ path: 'leaders', component: LeadersComponent},
-	{ path: 'alumni', component: AlumniComponent},
+	/*{ path: 'alumni', component: AlumniComponent},*/
 	{ path: 'vita', component: VitaComponent},
 	{ path: 'contact', component: ContactComponent},
     { path: 'login', component: LoginComponent },

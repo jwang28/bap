@@ -14,7 +14,7 @@ import { Router } from '@angular/router';
 })
 export class NavbarComponent implements OnInit {
   	isExpanded = false;
-	isScrolled = false;
+	  isScrolled = false;
     currPos: Number = 0;
     startPos: Number = 0;
     changePos: Number = 50;
@@ -67,6 +67,13 @@ export class NavbarComponent implements OnInit {
             }
             
         }
+    }
+    reload (){
+      window.location.reload();
+      console.log("here");
+    }
+    toTop(){
+      window.scrollTo(0,0);
     }
 
 }

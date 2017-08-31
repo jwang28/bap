@@ -11,6 +11,9 @@ body {
 	background-color: rgb(161,36,32);
 }
 
+iframe {
+  padding-right: 100px;
+}
 .threeCols {
   display: flex;
   flex-direction: row;
@@ -20,7 +23,17 @@ body {
 }
 
 
+.calendarWrapper {
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+  background: white;
+  align-items: center;
+  padding-left: 7vw;
+  padding-right: 2vw;
+  padding-bottom: 50px;
 
+}
 
 .mv-daynames-table {
   color: yellow;

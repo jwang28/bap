@@ -92,8 +92,8 @@
 
 .icon img{
 	padding: 10px;
-	width: 100%;
-	height: 100%;
+	width: 80px;
+	/*height: 100%;*/
 }
 
 #box {
@@ -124,6 +124,48 @@
 	position: relative;
 }
 
+.welcomeWrapper {
+	display: flex;
+	flex-direction: row;
+}
+
+.muWrapper {
+	padding-top: 0px;
+}
+
+.paddingBottom {
+	padding-bottom: 40px;
+}
+
+.whiteBackground {
+	background-color: white !important;
+}
+
+.fourWidth{
+	width: 18vw;
+	margin-bottom: 20px;
+	display: flex;
+	flex-direction: column;
+}
+.small-icon{
+	width: 30px;
+	margin-right: 10px;
+}
+
+.benefitHeader{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.addPadding {
+	padding-bottom: 10px;
+}
+
+.smallFont{
+	font-size: 13px !important;
+}
 @media (max-width: 768px){
 	.objectives{
 		flex-direction: column;
@@ -131,4 +173,9 @@
 	.obj-col{
 		width: 100%;
 	}
+	.fourWidth{
+		width: 100%;
+	}
 }
+
+

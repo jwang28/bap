@@ -119,6 +119,45 @@
 	color: rgb(181,32,36) !important;
 }
 
+.footer{
+	display: flex;
+	background-color:rgb(51,51,51);
+	color: rgb(93,93,93);
+	justify-content: space-between;
+	padding-left: 7vw;
+	padding-right: 7vw;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.social-icon{
+	width: 20px;
+	height: 20px;
+	margin-left: 10px;
+	margin-right: 10px;
+	cursor: pointer;
+}
+
+.social-icons {
+	display: flex;
+}
+
+.social {
+	display: flex;
+	flex-direction: column;
+}
+
+.email {
+	align-self: flex-end;
+	padding-right: 10px;
+}
+
+.email a {
+	text-decoration: none;
+	color: rgb(93,93,93);
+}
+
+
 
 
 

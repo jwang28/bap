@@ -6,8 +6,8 @@ import { DomSanitizer } from '@angular/platform-browser';
   templateUrl: './about.component.html',
   styleUrls: ['./about.component.css'],
   host: {
-  	'(window:scroll)': 'execute()',
-    '(window:load)': 'execute()',
+  	/*'(window:scroll)': 'execute()',
+    '(window:load)': 'execute()',*/
   }
 })
 export class AboutComponent implements OnInit {
@@ -26,10 +26,10 @@ export class AboutComponent implements OnInit {
     
   ngOnInit() {
     this.children = [this.ele,this.ele2];
-    this.execute();
+/*    this.execute();*/
   }
 
-  execute(){
+  /*execute(){
     console.log("onload");
       for (var i = 0; i < this.children.length; i++) {
         
@@ -49,5 +49,5 @@ export class AboutComponent implements OnInit {
           }
         }
      }
-  }
+  }*/
 }

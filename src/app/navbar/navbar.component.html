@@ -11,25 +11,28 @@
     <div class="navbar-collapse collapse" [ngClass]="{'in': isExpanded}">
       <ul class="nav navbar-nav navbar-right navbar-uppercase"  (click)="checkExpanded()">
         <li>
-          <a routerLink = "about" routerLinkActive="active">About</a>
+          <a (click)="reload()" routerLink = "">Home</a>
         </li>
         <li>
-          <a routerLink = "events" routerLinkActive="active">Events</a>
+          <a (click)="toTop()" routerLink = "about" routerLinkActive="active">About</a>
         </li>
         <li>
-          <a routerLink = "candidates" routerLinkActive="active">Candidates</a>
+          <a (click)="toTop()" routerLink = "events" routerLinkActive="active">Events</a>
         </li>
         <li>
-          <a routerLink = "leaders" routerLinkActive="active">Leaders</a>
+          <a (click)="toTop()" routerLink = "candidates" routerLinkActive="active">Candidates</a>
         </li>
         <li>
+          <a (click)="toTop()" routerLink = "leaders" routerLinkActive="active">Leaders</a>
+        </li>
+        <!-- <li>
           <a routerLink = "alumni" routerLinkActive="active">Alumni</a>
+        </li> -->
+        <li>
+          <a (click)="toTop()" routerLink = "vita" routerLinkActive="active">VITA</a>
         </li>
         <li>
-          <a routerLink = "vita" routerLinkActive="active">VITA</a>
-        </li>
-        <li>
-          <a routerLink = "contact" routerLinkActive="active">Contact</a>
+          <a (click)="toTop()" routerLink = "login" routerLinkActive="active">Login</a>
         </li>
       </ul>
 
@@ -37,12 +40,24 @@
   </div>
 </nav>
 
-
-
- 
-
 <div [ngClass] ="{routerOutlet: notHome}">
   <router-outlet></router-outlet>
+</div>
+
+<div class="footer">
+  <div>
+    Copyrights © 2017. All Rights Reserved.<br>
+    NYU Beta Alpha Psi | Mu Chapter
+  </div>
+  <div class="social">
+    <div class="social-icons">
+      <a href="https://www.facebook.com/bapnyu" target="_blank"><img class="social-icon" src="../../assets/images/fb.svg"></a>
+      <a href="https://www.instagram.com/bapnyu/" target="_blank"><img class="social-icon" src="../../assets/images/instagram.svg"></a>
+      <a href="https://www.youtube.com/user/BAPMuChapter" target="_blank"><img class="social-icon" src="../../assets/images/youtube.svg"></a>
+      <a href="https://twitter.com/bapnyu" target="_blank"><img class="social-icon" src="../../assets/images/twitter.svg"></a>
+    </div>
+    <div class="email"><a href="mailto:bap@stern.nyu.edu?Subject=BAP Inquiry" target="_top">Email: bap@stern.nyu.edu</a></div>
+  </div>
 </div>
 
 
