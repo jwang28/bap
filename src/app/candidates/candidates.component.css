@@ -124,6 +124,15 @@ a{
 	color: white;
 }
 
+#form-link {
+	color: rgb(181,32,36);
+	font-size: 17px;
+}
+
+#form-link:hover {
+	color: black;
+}
+
 @media (max-width: 768px){
 	.threeCols{
 		flex-direction: column;
