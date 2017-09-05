@@ -6,7 +6,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 export class MyFilterPipe implements PipeTransform {
     transform(items: any[], filter: Object): any {
 
-    if(filter == 1){
+    /*if(filter == 1){
       return items.slice(0, 3);
     }else if(filter == 2){
       return items.slice(3, 9);
@@ -32,10 +32,10 @@ export class MyFilterPipe implements PipeTransform {
       return items.slice(41, 45);
     }else{
       return items.slice(0,45);
-    } 
+    } */
        
     //old filter with 4 CMs
-    /*if(filter == 1){
+    if(filter == 1){
       return items.slice(0, 4);
     }else if(filter == 2){
       return items.slice(4, 10);
@@ -61,6 +61,6 @@ export class MyFilterPipe implements PipeTransform {
       return items.slice(42, 46);
     }else{
       return items.slice(0,46);
-    } */
+    } 
   }
 }

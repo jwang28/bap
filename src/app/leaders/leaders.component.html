@@ -87,7 +87,8 @@
 <div class="graySection">
 
    <div class = "four" *ngFor="let data of pipeFilterData | myfilter: pipeFilter">
-     <div class="header3 centerText" (click)="isVisible = !isVisible;" [ngClass]="{'hover': isVisible }">
+      <!-- <div class="header3 centerText" (click)="isVisible = !isVisible;" [ngClass]="{'hover': isVisible }"> -->
+      <div class="header3 centerText">
         <div class="img__wrap">
           <img class="picture" src="../../assets/images/profile/{{data.firstName}}.jpg" />
           <div class="img__description_layer">
