@@ -24,7 +24,8 @@
 
 .routerOutlet {
 	padding-top: 70px;
-	animation: fadein 2s;
+	animation: fadein 2s;	
+
 }
 /*navbar default*/
 .navbar-default {
@@ -157,7 +158,20 @@
 	color: rgb(93,93,93);
 }
 
+.gears {
+	display: flex;
+	justify-content: center;
+	vertical-align: middle;
+	width: 100vw;
+	height: 100vh;
+}
 
+.gearPhoto {
+	display: flex;
+	align-self: center;
+	width: 100px;
+	height: 100px;
+}
 
 
 

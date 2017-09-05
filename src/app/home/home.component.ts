@@ -29,6 +29,7 @@ export class HomeComponent implements OnInit {
     lineWidth: any;
     setWidth: any = .2;
     aboutTop: any;
+    is_safari: any = (navigator.userAgent.indexOf("Safari") > -1) && navigator.userAgent.indexOf('Chrome') == -1;
 
     @ViewChild('bgDiv1') ele: ElementRef;
     @ViewChild('bgDiv2') ele2: ElementRef;
@@ -39,6 +40,11 @@ export class HomeComponent implements OnInit {
     this.children = [this.ele,this.ele2];
     this.execute();
     this.aboutTop = this.ele3.nativeElement.getBoundingClientRect().top;
+
+    this.setWidth = (window.innerWidth < 768) ? .4 : .2;
+    this.width = (window.innerWidth * this.setWidth) * 1;
+    this.lineWidth = this.width + "px";
+    console.log("safari: " + this.is_safari);
   }
 
   toLogin(){
@@ -53,9 +59,8 @@ export class HomeComponent implements OnInit {
   }
 
   execute(){
-    if (window.innerWidth > 768){
+    if (window.innerWidth > 768 && !this.is_safari){
       for (var i = 0; i < this.children.length; i++) {
-        console.log("calc header");
         this.divTop = this.children[i].nativeElement.getBoundingClientRect().top;
         this.divBottom = this.children[i].nativeElement.getBoundingClientRect().bottom;
         this.div = this.divBottom-this.divTop;
@@ -73,21 +78,25 @@ export class HomeComponent implements OnInit {
 
           //length of separators in title
           this.setWidth = (window.innerWidth < 768) ? .4 : .2;
+          /*console.log("it is here " + this.setWidth);*/
           
           switch (i){
             case 0:
               this.bottom1 = this.offsetPx;
               this.opacity1 = (this.divBottom-(this.div * (1-this.fadeHeight)))/(this.div * this.fadeHeight);
+              
               this.width = (window.innerWidth* this.setWidth) * this.opacity1;
+         
               this.lineWidth = this.width + "px";
+           
               
               break;
             case 1: 
               this.bottom2 = this.offsetPx;
               this.opacity2 = (this.divBottom-(this.div * (1-this.fadeHeight)))/(this.div * this.fadeHeight);
           }
-          console.log("div 1 is: " + this.bottom1);
-          console.log("div 2 is: " + this.bottom2);
+          /*console.log("div 1 is: " + this.bottom1);
+          console.log("div 2 is: " + this.bottom2);*/
         }
       }
     }

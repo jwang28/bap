@@ -67,7 +67,7 @@
     <select class="form-control" 
       [value]="pipeFilter" 
       (input)="pipeFilter = $event.target.value">
-      Display Committees By2: 
+    
         <option value="">All Committees</option>
         <option value="1">Candidate Master</option>
         <option value="2">Community Service</option>
@@ -87,7 +87,7 @@
 <div class="graySection">
 
    <div class = "four" *ngFor="let data of pipeFilterData | myfilter: pipeFilter">
-     <div class="header3 centerText">
+     <div class="header3 centerText" (click)="isVisible = !isVisible;" [ngClass]="{'hover': isVisible }">
         <div class="img__wrap">
           <img class="picture" src="../../assets/images/profile/{{data.firstName}}.jpg" />
           <div class="img__description_layer">

@@ -62,7 +62,11 @@ select {
   transition: opacity .2s, visibility .2s;
 }
 
-.img__wrap:hover .img__description_layer {
+.hover {
+  background: blue;
+}
+
+.img__wrap:hover .img__description_layer, .hover {
   visibility: visible;
   cursor: pointer;
   opacity: 1;
@@ -73,7 +77,7 @@ select {
   transform: translateY(1em);
 }
 
-.img__wrap:hover .img__description {
+.img__wrap:hover .img__description, .hover {
   transform: translateY(0);
 }
 
@@ -82,7 +86,7 @@ select {
 .picture {
 	width: 15vw;
 }
-
+/*
 .bio {
   position: relative;
   top: 0;
@@ -94,16 +98,16 @@ select {
   visibility: hidden;
   opacity: 0;
 
-  /* transition effect. not necessary */
+  /* transition effect. not necessary xs
   transition: opacity .2s, visibility .2s;
 }
+*/
 
 
-
-.pictureWrapper:hover .bio {
+/*.pictureWrapper:hover .bio {
   visibility: visible;
   opacity: 1;
-}
+}*/
 
 .cols {
 	display: flex;

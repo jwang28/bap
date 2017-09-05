@@ -10,6 +10,7 @@ import { Router } from '@angular/router';
   	'(window:scroll)': 'updateHeader($event)',
   	'(window:resize)': 'updateHeader($event)',
   	'(window:onload)': 'updateHeader($event)',
+    '(window:load)': 'load($event)',
   }
 })
 export class NavbarComponent implements OnInit {
@@ -21,11 +22,13 @@ export class NavbarComponent implements OnInit {
     notHome = false;
     src: String = "../../assets/images/bapWhite.png";
     hideFooter: boolean=false;
+    loaded: boolean = false;
 
 
   constructor(private router: Router) {
   	router.events.subscribe((event) => {
-  		if (router.url !== '/'){
+  		if ((router.url !== '/') && (router.url !== '/home')){
+     
   			this.notHome = true;
   			this.src = "../../assets/images/bap.png";
   		}
@@ -40,6 +43,7 @@ export class NavbarComponent implements OnInit {
 
 
   ngOnInit() {
+    this.notHome = false;
   }
   checkExpanded() {
   	if (window.innerWidth < 768){
@@ -75,12 +79,18 @@ export class NavbarComponent implements OnInit {
             
         }
     }
+
+    load() {
+      /*console.log("loaded");*/
+      setTimeout(() => { this.loaded = true;},300);
+     
+
+    }
     reload (){
       window.location.reload();
-      console.log("here");
+     /* console.log("here");*/
     }
     toTop(){
       window.scrollTo(0,0);
     }
-
 }

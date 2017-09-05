@@ -20,7 +20,7 @@ import { EmailComponent } from './email/email.component';
 export const router: Routes = [
 	//{ path: '', redirectTo: 'about', pathMatch: 'full'},
 	//add in null or random chars path
-	{ path: '', component: HomeComponent},
+	{ path: '', redirectTo: 'home', pathMatch: 'full'},
 	{ path: 'home', component: HomeComponent},
 	{ path: 'about', component: AboutComponent},
 	{ path: 'events', component: EventsComponent},
