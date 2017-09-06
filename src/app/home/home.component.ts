@@ -44,7 +44,7 @@ export class HomeComponent implements OnInit {
     this.setWidth = (window.innerWidth < 768) ? .4 : .2;
     this.width = (window.innerWidth * this.setWidth) * 1;
     this.lineWidth = this.width + "px";
-    console.log("safari: " + this.is_safari);
+    /*console.log("safari: " + this.is_safari);*/
   }
 
   toLogin(){
