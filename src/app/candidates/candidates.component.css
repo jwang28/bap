@@ -124,6 +124,15 @@ a{
 	color: white;
 }
 
+.email-link{
+	font-size: 24px !important;
+	color: black !important;
+}
+
+.email-icon{
+	height: 28px;
+}
+
 #form-link {
 	color: rgb(181,32,36);
 	font-size: 17px;

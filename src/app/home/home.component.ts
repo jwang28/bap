@@ -8,7 +8,8 @@ import { Router } from '@angular/router';
   styleUrls: ['./home.component.css'],
   host: {
   	'(window:scroll)': 'execute($event)',
-    '(window:resize)': 'execute($event)'
+    '(window:resize)': 'execute($event)',
+    '(window:onload)': 'execute($event)'
   }
 })
 export class HomeComponent implements OnInit {
@@ -45,6 +46,7 @@ export class HomeComponent implements OnInit {
     this.width = (window.innerWidth * this.setWidth) * 1;
     this.lineWidth = this.width + "px";
     /*console.log("safari: " + this.is_safari);*/
+    console.log("on init");
   }
 
   toLogin(){
@@ -64,13 +66,15 @@ export class HomeComponent implements OnInit {
         this.divTop = this.children[i].nativeElement.getBoundingClientRect().top;
         this.divBottom = this.children[i].nativeElement.getBoundingClientRect().bottom;
         this.div = this.divBottom-this.divTop;
-
+          console.log("inner for loop");
 
 
         //check if top of element is scrolled in view height
 
         if((window.innerHeight -  this.divTop) >= 0 && ((window.innerHeight-this.divTop) < (window.innerHeight+this.div))){
           //check if bottom of element is still in view height
+
+          console.log(window.innerHeight + ' ' + this.divTop + ' ' + this.div);
           this.scroll = (this.divBottom < 0) ? 0 : (window.innerHeight - this.divTop);
           this.offset = -this.scroll*this.speed;
           this.offsetPx = this.offset + "px";
