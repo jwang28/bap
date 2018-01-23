@@ -49,7 +49,10 @@ export class MembersComponent implements OnInit {
         this.member = db.object('/members/' + this.netID);
         console.log("netID is: " + this.netID);
 
-        this.professional_attended = db.list('attendance/' + this.netID + '/professional/attended');
+        this.professional_attended = db.list('jyw289/Professional/Attended');
+        console.log("pe is: " + this.professional_attended[0]);
+        /*this.professional_attended = db.list(this.netID + '/Professional/Attended');*/
+        /*this.professional_attended = db.list('attendance/' + this.netID + '/professional/attended');*/
         this.professional_unattended = db.list('attendance/' + this.netID + '/professional/unattended');
         this.social_attended = db.list('attendance/' + this.netID + '/social/attended');
         this.social_unattended = db.list('attendance/' + this.netID + '/social/unattended');

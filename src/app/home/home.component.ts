@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
   host: {
   	'(window:scroll)': 'execute($event)',
     '(window:resize)': 'execute($event)',
-    '(window:onload)': 'execute($event)'
+    '(window:load)': 'execute($event)'
   }
 })
 export class HomeComponent implements OnInit {
@@ -47,6 +47,7 @@ export class HomeComponent implements OnInit {
     this.lineWidth = this.width + "px";
     /*console.log("safari: " + this.is_safari);*/
     console.log("on init");
+    this.divTop = 0;
   }
 
   toLogin(){
@@ -73,8 +74,9 @@ export class HomeComponent implements OnInit {
 
         if((window.innerHeight -  this.divTop) >= 0 && ((window.innerHeight-this.divTop) < (window.innerHeight+this.div))){
           //check if bottom of element is still in view height
-
-          console.log(window.innerHeight + ' ' + this.divTop + ' ' + this.div);
+          console.log(this.children[i]);
+          console.log(i + ' ' + window.innerHeight + ' ' + this.divTop + ' ' + this.div);
+          //check if the div is in the view height (not scrolled too high)
           this.scroll = (this.divBottom < 0) ? 0 : (window.innerHeight - this.divTop);
           this.offset = -this.scroll*this.speed;
           this.offsetPx = this.offset + "px";
