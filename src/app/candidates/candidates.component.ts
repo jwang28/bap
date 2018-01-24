@@ -29,6 +29,10 @@ export class CandidatesComponent implements OnInit {
   	/*window.location.href = 'https://goo.gl/forms/Nft2PkKtiKZjh8Yo2';*/
     window.open('https://docs.google.com/forms/d/e/1FAIpQLSfqc-C_kMPlo-F1xS0dige7eotnGeR1E_y2XAKQWholfo8vDA/viewform');
   }
+  fmp(){
+    /*window.location.href = 'https://goo.gl/forms/Nft2PkKtiKZjh8Yo2';*/
+    window.open('http://bit.ly/fmp2018application');
+  }
 
   toLogin(){
   	this.router.navigateByUrl('/login');
