@@ -42,25 +42,27 @@ export class MyFilterPipe implements PipeTransform {
     }else if(filter == 3){
       return items.slice(10, 14);
     }else if(filter == 4){
-      return items.slice(14, 19);
+      return items.slice(14, 20);
     }else if(filter == 5){
-      return items.slice(19, 22);
+      return items.slice(20, 23);
     }else if(filter == 6){
-      return items.slice(22, 25);
+      return items.slice(23, 26);
     }else if(filter == 7){
-      return items.slice(25, 29);
+      return items.slice(26, 30);
     }else if(filter == 8){
-      return items.slice(29, 32);
+      return items.slice(30, 33);
     }else if(filter == 9){
-      return items.slice(32, 35);
+      return items.slice(33, 36);
     }else if(filter == 10){
-      return items.slice(35, 39);
+      return items.slice(36, 40);
     }else if(filter == 11){
-      return items.slice(39, 42);
+      return items.slice(40, 46);
     }else if(filter == 12){
-      return items.slice(42, 46);
+      return items.slice(46, 50);
+    }else if(filter == 13){
+      return items.slice(50, 53);
     }else{
-      return items.slice(0,46);
+      return items.slice(0,53);
     } 
   }
 }
