@@ -1,5 +1,12 @@
 .center {
-  margin: auto;
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+  background: white;
+  align-items: center;
+  padding-left: 7vw;
+  padding-right: 2vw;
+  padding-bottom: 50px;
 }
 
 #lock {
