@@ -11,9 +11,9 @@
     <div class="leftCol five">
       <div class="img__wrap">
         <img class="photo" src="../../assets/images/profile/Alex.jpg">
-        <div class="img__description_layer">
-          <!-- <p class="img__description">Alex is a senior.</p> -->
-        </div>
+        <!-- <div class="img__description_layer">
+           <p class="img__description">Alex is a senior.</p> 
+        </div> -->
       </div>
       <div class="header3 center">Alex Yu</div>
       <div class="header3 center"><b>President</b></div><br>
@@ -21,21 +21,21 @@
     <div class="leftCol five">
       <div class="img__wrap">
         <img class="photo" src="../../assets/images/profile/Jennifer.jpg">
-        <div class="img__description_layer">
-          <!-- <p class="img__description">Jennifer is a senior.</p> -->
-        </div>
+        <!-- <div class="img__description_layer">
+          <p class="img__description">Jennifer is a senior.</p> 
+        </div> -->
       </div>
       <div class="header3 center">Jennifer Chan</div>
       <div class="header3 center"><b>Vice President</b></div><br>
     </div>
     <div class="leftCol five">
       <div class="img__wrap">
-        <img class="photo" src="../../assets/images/profile/Vinny.jpg">
-        <div class="img__description_layer">
-          <!-- <p class="img__description">Vinny is a senior.</p> -->
-        </div>
+        <img class="photo" src="../../assets/images/profile/Megan.jpg">
+        <!-- <div class="img__description_layer">
+           <p class="img__description">Vinny is a senior.</p> 
+        </div> -->
       </div>
-      <div class="header3 center">Vincent Coghill</div>
+      <div class="header3 center">Megan Lee</div>
       <div class="header3 center centerText"><b>Director of Correspondence</b></div><br>
     </div>
     <!-- <div class="leftCol five">
@@ -51,9 +51,9 @@
     <div class="rightCol five rightCol">
       <div class="img__wrap">
         <img class="photo" src="../../assets/images/profile/Jennifer .jpg">
-        <div class="img__description_layer">
-          <!-- <p class="img__description">Jennifer is a senior.</p> -->
-        </div>
+        <!-- <div class="img__description_layer">
+           <p class="img__description">Jennifer is a senior.</p> 
+        </div> -->
       </div>
       <div class="header3 center">Jennifer Kim</div>
       <div class="header3 center"><b>Treasurer</b></div>
@@ -61,7 +61,7 @@
   </div>
 </div>
 
-<div class = "filterWrapper"> 
+<!-- <div class = "filterWrapper"> 
   <div class="header2 filterLabel font22 centerText">Display Committees By: </div>
     <div class="">
     <select class="form-control" 
@@ -71,20 +71,26 @@
         <option value="">All Committees</option>
         <option value="1">Candidate Master</option>
         <option value="2">Community Service</option>
-        <option value="3">Marketing</option>
-        <option value="4">Mentoring</option>
-        <option value="5">Publications</option>
-        <option value="6">Social Events</option>
-        <option value="7">Speaker Events</option>
-        <option value="8">Special Events</option>
-        <option value="9">Technology</option>
-        <option value="10">Tutoring</option>
-        <option value="11">VITA</option>
-        <option value="12">Workshop</option>
-        <option value="13">IBD Workshop</option>
+        <option value="3">Consulting Workshop</option>
+        <option value="4">IBD Workshop</option>
+        <option value="5">Marketing</option>
+        <option value="6">Mentoring</option>
+        <option value="7">Publications</option>
+        <option value="8">Social Events</option>
+        <option value="9">Speaker Events</option>
+        <option value="10">Special Events</option>
+        <option value="11">Technology</option>
+        <option value="12">Tutoring</option>
+        <option value="13">VITA</option>
+        <option value="14">Workshop</option>
     </select>
     </div>
+</div> -->
+
+<div class = "filterWrapper"> 
+  <div class="header2 filterLabel font22 centerText">Committees</div>
 </div>
+
 <div class="graySection">
 
    <div class = "four" *ngFor="let data of pipeFilterData | myfilter: pipeFilter">
@@ -92,9 +98,9 @@
       <div class="header3 centerText">
         <div class="img__wrap">
           <img class="picture" src="../../assets/images/profile/{{data.firstName}}.jpg" />
-          <div class="img__description_layer">
+          <!--<div class="img__description_layer">
             <p class="img__description">{{data.bio}}</p>
-          </div>
+          </div> -->
         </div>
         {{data.firstName}} {{data.lastName}} <br><b>{{data.position}}</b><br>
 
