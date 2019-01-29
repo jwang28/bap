@@ -26,8 +26,8 @@ export class CandidatesComponent implements OnInit {
   }
 
   redirect(){
-  	/*window.location.href = 'https://goo.gl/forms/JXP8PbeARgNNLCJg1';*/
-    window.open('https://docs.google.com/forms/d/e/1FAIpQLSerqgFbfgzc070qnliXHAVIIKA179qYaVqY5fyEo0yq9UPS6w/viewform');
+  	/*window.location.href = 'https://goo.gl/forms/h0wiexjtPuHDK2jh1';*/
+    window.open('https://docs.google.com/forms/d/e/1FAIpQLSeRa3NDvlP9sD5EVxFR7TqrBmt2OpwkalId9jpPhHs8vcRmlw/viewform');
   }
   fmp(){
     /*window.location.href = 'https://goo.gl/forms/Nft2PkKtiKZjh8Yo2';*/
