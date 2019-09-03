@@ -125,9 +125,9 @@ export class LeadersComponent implements OnInit {
     },
     {
       "bio": "",
-      "firstName": "Emily",
+      "firstName": "Emily Yan",
       "key": 14,
-      "lastName": "Yan",
+      "lastName": "",
       "position": "Marketing"
     },
     {
@@ -209,9 +209,9 @@ export class LeadersComponent implements OnInit {
     },
     {
       "bio": " ",
-      "firstName": "Sarah",
+      "firstName": "Sarah Yang",
       "key": 26,
-      "lastName": "Yang",
+      "lastName": "",
       "position": "Social"
     },
     {
@@ -307,7 +307,7 @@ export class LeadersComponent implements OnInit {
     },
     {
       "bio": " ",
-      "firstName": "Dennis ",
+      "firstName": "Dennis",
       "key": 40,
       "lastName": "Ding",
       "position": "VITA Chair"

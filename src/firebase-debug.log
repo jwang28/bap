@@ -1,0 +1,25 @@
+[debug] [2019-09-03T22:45:42.663Z] ----------------------------------------------------------------------
+[debug] [2019-09-03T22:45:42.666Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\tongy\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2019-09-03T22:45:42.667Z] CLI Version:   7.2.2
+[debug] [2019-09-03T22:45:42.667Z] Platform:      win32
+[debug] [2019-09-03T22:45:42.667Z] Node Version:  v10.16.2
+[debug] [2019-09-03T22:45:42.668Z] Time:          Tue Sep 03 2019 18:45:42 GMT-0400 (Eastern Daylight Time)
+[debug] [2019-09-03T22:45:42.668Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-09-03T22:45:42.681Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-09-03T22:45:42.682Z] > authorizing via signed-in user
+[debug] [2019-09-03T22:45:42.682Z] [iam] checking project bapwebsite-cbd35 for permissions ["firebase.projects.get"]
+[debug] [2019-09-03T22:45:42.684Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/bapwebsite-cbd35:testIamPermissions  
+
+[debug] [2019-09-03T22:45:43.087Z] <<< HTTP RESPONSE 200
+[debug] [2019-09-03T22:45:43.092Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/bapwebsite-cbd35  
+ 
+[debug] [2019-09-03T22:45:43.356Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\Users\tongy\bap'...
+[info] 
+[debug] [2019-09-03T22:45:43.384Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/bapwebsite-cbd35/webApps/-/config  
+ 
+[debug] [2019-09-03T22:45:43.773Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: dist
+[info] +  hosting: Local server: http://localhost:5000
