@@ -27,114 +27,114 @@ export class LeadersComponent implements OnInit {
   jsonData = [
     {
       "bio": " ",
-      "firstName": "Connie",
+      "firstName": "Avery",
       "key": 0,
-      "lastName": "Yu",
+      "lastName": "Farm",
       "position": "Candidate Master Chair"
     },
     {
       "bio": " ",
-      "firstName": "David",
+      "firstName": "Melissa",
       "key": 1,
-      "lastName": "Moon",
+      "lastName": "Zhang",
       "position": "Candidate Master Chair"
     },
     {
       "bio": " ",
-      "firstName": "Rebecca",
+      "firstName": "Charlie",
       "key": 2,
-      "lastName": "Wang",
+      "lastName": "Liang",
       "position": "Candidate Master"
     },
     {
       "bio": " ",
-      "firstName": "Timothy",
+      "firstName": "Sarah",
       "key": 3,
-      "lastName": "Shu",
+      "lastName": "Sung",
       "position": "Candidate Master "
     },
     {
       "bio": " ",
-      "firstName": "Jery",
+      "firstName": "Annie",
       "key": 4,
-      "lastName": "Tang",
+      "lastName": "Yang",
       "position": "Community Service Chair"
     },
     {
       "bio": " ",
-      "firstName": "Annie",
+      "firstName": "Olivia",
       "key": 5,
-      "lastName": "Yang",
+      "lastName": "Fan",
       "position": "Community Service"
     },
     {
       "bio": " ",
-      "firstName": "Avery",
+      "firstName": "Rebekah",
       "key": 6,
-      "lastName": "Farm",
+      "lastName": "Wu",
       "position": "Community Service"
     },
     {
       "bio": " ",
-      "firstName": "Euihyun",
+      "firstName": "Vivian",
       "key": 7,
-      "lastName": "Kim",
+      "lastName": "Luo",
       "position": "Community Service"
     },
     {
       "bio": " ",
-      "firstName": "Jessica",
+      "firstName": "Zoey",
       "key": 8,
-      "lastName": "Yang",
+      "lastName": "Zhou",
       "position": "Community Service"
-    },
-    {
-      "bio": " ",
-      "firstName": "Thalia",
-      "key": 9,
-      "lastName": "Lee",
-      "position": "Consulting Workshop"
     },
     {
       "bio": " ",
       "firstName": "Chaokun",
-      "key": 10,
+      "key": 9,
       "lastName": "Wangli",
       "position": "Consulting Workshop"
     },
     {
       "bio": " ",
-      "firstName": "Alice",
+      "firstName": "Simon",
+      "key": 10,
+      "lastName": "Tang",
+      "position": "Consulting Workshop"
+    },
+    {
+      "bio": " ",
+      "firstName": "Ethan",
       "key": 11,
-      "lastName": "Yang",
+      "lastName": "Lin",
       "position": "IBD Workshop"
     },
     {
       "bio": " ",
-      "firstName": "Teresa",
+      "firstName": "Nathan",
       "key": 12,
-      "lastName": "Nguyen",
+      "lastName": "Li",
       "position": "IBD Workshop"
-    },
-    {
-      "bio": " ",
-      "firstName": "Thalia",
-      "key": 13,
-      "lastName": "Lee",
-      "position": "Marketing Chair"
-    },
-    {
-      "bio": "",
-      "firstName": "Nancy",
-      "key": 14,
-      "lastName": "Chen",
-      "position": "Marketing"
     },
     {
       "bio": " ",
       "firstName": "Christy",
+      "key": 13,
+      "lastName": "Chiang",
+      "position": "Marketing Chair"
+    },
+    {
+      "bio": "",
+      "firstName": "Emily",
+      "key": 14,
+      "lastName": "Yan",
+      "position": "Marketing"
+    },
+    {
+      "bio": " ",
+      "firstName": "James",
       "key": 15,
-      "lastName": "Chang",
+      "lastName": "Foo",
       "position": "Marketing"
     },
     {
@@ -146,247 +146,212 @@ export class LeadersComponent implements OnInit {
     },
     {
       "bio": " ",
-      "firstName": "Kenneth",
+      "firstName": "Annette",
       "key": 17,
-      "lastName": "Yu",
+      "lastName": "Kim",
       "position": "Mentoring Chair"
     },
     {
       "bio": " ",
-      "firstName": "Annette",
+      "firstName": "Joey",
       "key": 18,
-      "lastName": "Kim",
+      "lastName": "Hwang",
       "position": "Mentoring Vice Chair"
     },
     {
       "bio": " ",
-      "firstName": "Chris",
+      "firstName": "Helen",
       "key": 19,
-      "lastName": "Bao",
+      "lastName": "Shim",
       "position": "Mentoring"
     },
     {
       "bio": " ",
-      "firstName": "Hannah",
+      "firstName": "Riya",
       "key": 20,
-      "lastName": "Zhang",
+      "lastName": "Mital",
       "position": "Mentoring"
     },
     {
       "bio": " ",
-      "firstName": "Melissa",
+      "firstName": "Weilun",
       "key": 21,
-      "lastName": "Zhang",
+      "lastName": "Wang",
       "position": "Mentoring"
     },
     {
       "bio": " ",
-      "firstName": "Joanne ",
+      "firstName": "Sanjana",
       "key": 22,
-      "lastName": "Wang",
+      "lastName": "Gupta",
       "position": "Publications Chair"
     },
     {
       "bio": " ",
-      "firstName": "Jason",
+      "firstName": "Aditi",
       "key": 23,
-      "lastName": "Suh",
+      "lastName": "Ganesan",
       "position": "Publications"
     },
     {
       "bio": "",
-      "firstName": "Travis",
+      "firstName": "Eileen",
       "key": 24,
-      "lastName": "Liu",
+      "lastName": "Wang",
       "position": "Publications"
     },
     {
       "bio": "",
-      "firstName": "Yuni",
+      "firstName": "Michelle",
       "key": 25,
-      "lastName": "Sohn",
+      "lastName": "Wang",
       "position": "Social Chair"
     },
     {
       "bio": " ",
-      "firstName": "Michelle",
-      "key": 26,
-      "lastName": "Wang",
-      "position": "Social"
-    },
-    {
-      "bio": "",
       "firstName": "Sarah",
-      "key": 27,
+      "key": 26,
       "lastName": "Yang",
       "position": "Social"
     },
     {
+      "bio": "",
+      "firstName": "Yuan",
+      "key": 27,
+      "lastName": "Yue",
+      "position": "Social"
+    },
+    {
       "bio": " ",
-      "firstName": "Jimmy",
+      "firstName": "Yutong",
       "key": 28,
-      "lastName": "Teng",
+      "lastName": "Zhang",
       "position": "Speaker Chair"
     },
     {
       "bio": " ",
-      "firstName": "Kevin",
+      "firstName": "Eric",
       "key": 29,
-      "lastName": "Cao",
-      "position": "Speaker"
-    },
-    {
-      "bio": "",
-      "firstName": "Yutong",
-      "key": 30,
       "lastName": "Zhang",
       "position": "Speaker"
     },
     {
-      "bio": " ",
-      "firstName": "Caroline",
-      "key": 31,
-      "lastName": "Wang",
-      "position": "Special Events Chair"
-    },
-    {
       "bio": "",
-      "firstName": "Nina",
-      "key": 32,
-      "lastName": "Yu",
-      "position": "Special Events Vice Chair"
+      "firstName": "Philip",
+      "key": 30,
+      "lastName": "Xu",
+      "position": "Speaker"
     },
     {
       "bio": " ",
       "firstName": "Phoebe",
-      "key": 33,
+      "key": 31,
       "lastName": "Chen",
+      "position": "Special Events Chair"
+    },
+    {
+      "bio": "",
+      "firstName": "Sienna",
+      "key": 32,
+      "lastName": "Zhu",
+      "position": "Special Events Vice Chair"
+    },
+    {
+      "bio": " ",
+      "firstName": "Douglas",
+      "key": 33,
+      "lastName": "Tsang",
       "position": "Special Events"
     },
     {
       "bio": " ",
-      "firstName": "Valerie",
+      "firstName": "Emma",
       "key": 34,
-      "lastName": "Wang",
+      "lastName": "Tong",
       "position": "Technology Chair"
     },
     {
       "bio": "",
-      "firstName": "Alexander",
-      "key": 35,
-      "lastName": "Hsu",
-      "position": "Technology"
-    },
-    {
-      "bio": " ",
       "firstName": "Derek",
-      "key": 36,
+      "key": 35,
       "lastName": "Huang",
       "position": "Technology"
     },
     {
+      "bio": " ",
+      "firstName": "Charles",
+      "key": 36,
+      "lastName": "Zheng",
+      "position": "Technology"
+    },
+    {
       "bio": "",
-      "firstName": "Aakriti",
+      "firstName": "Matthew",
       "key": 37,
-      "lastName": "Suri",
+      "lastName": "Zhang",
       "position": "Tutoring Chair"
     },
     {
       "bio": " ",
-      "firstName": "Edward",
+      "firstName": "Madhav",
       "key": 38,
-      "lastName": "Low",
-      "position": "Tutoring Chair"
-    },
-    {
-      "bio": " ",
-      "firstName": "Satyam",
-      "key": 39,
-      "lastName": "Agarwal",
+      "lastName": "Gupta",
       "position": "Tutoring Vice Chair"
     },
     {
       "bio": " ",
-      "firstName": "Vincent",
+      "firstName": "Cameron",
+      "key": 39,
+      "lastName": "Chu",
+      "position": "Tutoring"
+    },
+    {
+      "bio": " ",
+      "firstName": "Dennis ",
       "key": 40,
-      "lastName": "Cao",
-      "position": "Tutoring"
-    },
-    {
-      "bio": " ",
-      "firstName": "Saurav",
-      "key": 41,
-      "lastName": "Bose",
-      "position": "Tutoring"
-    },
-    {
-      "bio": " ",
-      "firstName": "Matthew",
-      "key": 42,
-      "lastName": "Zhang",
-      "position": "Tutoring"
-    },
-    {
-      "bio": " ",
-      "firstName": "Kevin ",
-      "key": 43,
-      "lastName": "Chen",
-      "position": "VITA Chair"
-    },
-    {
-      "bio": " ",
-      "firstName": "Lucy",
-      "key": 44,
-      "lastName": "Lian",
-      "position": "VITA Chair"
-    },
-    {
-      "bio": " ",
-      "firstName": "Grace",
-      "key": 45,
-      "lastName": "Cai",
-      "position": "VITA"
-    },
-    {
-      "bio": " ",
-      "firstName": "Julie",
-      "key": 46,
-      "lastName": "Kim",
-      "position": "VITA"
-    },
-    {
-      "bio": " ",
-      "firstName": "May",
-      "key": 47,
       "lastName": "Ding",
-      "position": "VITA"
+      "position": "VITA Chair"
     },
     {
       "bio": " ",
       "firstName": "Tiger",
-      "key": 48,
+      "key": 41,
       "lastName": "Wu",
+      "position": "VITA Chair"
+    },
+    {
+      "bio": " ",
+      "firstName": "Emily",
+      "key": 42,
+      "lastName": "Bai",
       "position": "VITA"
     },
     {
       "bio": " ",
       "firstName": "Jisoo",
-      "key": 49,
+      "key": 43,
       "lastName": "Kim",
-      "position": "Workshop Vice Chair"
+      "position": "Workshop Chair"
     },
     {
       "bio": "",
-      "firstName": "Blain",
-      "key": 50,
-      "lastName": "Liang",
+      "firstName": "Ariel",
+      "key": 44,
+      "lastName": "Kau",
       "position": "Workshop"
     },
     {
       "bio": "",
-      "firstName": "Ethan",
-      "key": 51,
-      "lastName": "Lin",
+      "firstName": "Kevin",
+      "key": 45,
+      "lastName": "Cao",
+      "position": "Workshop"
+    },
+    {
+      "bio": "",
+      "firstName": "Sara",
+      "key": 46,
+      "lastName": "Liu",
       "position": "Workshop"
     }
   ];
