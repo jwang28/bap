@@ -27,7 +27,7 @@ export class CandidatesComponent implements OnInit {
 
   redirect(){
   	/*window.location.href = 'https://goo.gl/forms/h0wiexjtPuHDK2jh1';*/
-    window.open('https://docs.google.com/forms/d/e/1FAIpQLSeRa3NDvlP9sD5EVxFR7TqrBmt2OpwkalId9jpPhHs8vcRmlw/viewform');
+    window.open('https://docs.google.com/forms/d/e/1FAIpQLSdRRbc8EgOo0LEUkBW16k7V2GgCoEa3LEhK-Gu2p_Z4adnXDQ/viewform');
   }
   fmp(){
     /*window.location.href = 'https://goo.gl/forms/Nft2PkKtiKZjh8Yo2';*/
