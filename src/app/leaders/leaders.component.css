@@ -81,13 +81,14 @@ select {
   transform: translateY(0);
 }
 
-.testButton {
+/* button for scheduling coffee chats (modifid redButton class) */
+.chat_button {
   border-radius: 3px;
   color: white;
   border-bottom: 5px solid rgba(0,0,0,.15);
   background-color: rgba(181,32,36,.75);
   padding: 0 32px;
-  font-size: 18px;
+  font-size: 12px;
   letter-spacing: 2px;
   height: 52px;
   line-height: 52px;
