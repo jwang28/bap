@@ -260,7 +260,7 @@ export class LeadersComponent implements OnInit {
       "bio": " ",
       "firstName": "Emma",
       "key": 33,
-      "lastName": "Tong",
+      "lastName": "Tong:):)",
       "position": "Technology Chair"
     },
     {
