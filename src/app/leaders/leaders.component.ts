@@ -271,93 +271,86 @@ export class LeadersComponent implements OnInit {
       "position": "Technology"
     },
     {
-      "bio": "",
-      "firstName": "Matthew",
+      "bio": " ",
+      "firstName": "Madhav",
       "key": 35,
-      "lastName": "Zhang",
+      "lastName": "Gupta",
       "position": "Tutoring Chair"
     },
     {
       "bio": " ",
-      "firstName": "Madhav",
-      "key": 36,
-      "lastName": "Gupta",
-      "position": "Tutoring Vice Chair"
-    },
-    {
-      "bio": " ",
       "firstName": "Cameron",
-      "key": 37,
+      "key": 36,
       "lastName": "Chu",
       "position": "Tutoring"
     },
     {
       "bio": "",
       "firstName": "Derek",
-      "key": 38,
+      "key": 37,
       "lastName": "Huang",
       "position": "Tutoring"
     },
     {
       "bio": "",
       "firstName": "Shushanth",
-      "key": 39,
+      "key": 38,
       "lastName": "Gunukula",
       "position": "Tutoring"
     },
     {
       "bio": " ",
       "firstName": "Dennis",
-      "key": 40,
+      "key": 39,
       "lastName": "Ding",
       "position": "VITA Chair"
     },
     {
       "bio": " ",
       "firstName": "Tiger",
-      "key": 41,
+      "key": 40,
       "lastName": "Wu",
       "position": "VITA Chair"
     },
     {
       "bio": " ",
       "firstName": "Emily",
-      "key": 42,
+      "key": 41,
       "lastName": "Bai",
       "position": "VITA"
     },
     {
       "bio": " ",
       "firstName": "Derek ",
-      "key": 43,
+      "key": 42,
       "lastName": "Lee",
       "position": "VITA"
     },
     {
       "bio": " ",
       "firstName": "Ariel",
-      "key": 44,
+      "key": 43,
       "lastName": "Kau",
       "position": "Workshop Chair"
     },
     {
       "bio": "",
       "firstName": "Chris",
-      "key": 45,
+      "key": 44,
       "lastName": "Bao",
       "position": "Workshop"
     },
     {
       "bio": "",
       "firstName": "Kevin",
-      "key": 46,
+      "key": 45,
       "lastName": "Cao",
       "position": "Workshop"
     },
     {
       "bio": "",
       "firstName": "Shreya",
-      "key": 47,
+      "key": 46,
       "lastName": "Dua",
       "position": "Workshop"
     }
