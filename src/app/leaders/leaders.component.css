@@ -87,11 +87,12 @@ select {
   color: white;
   border-bottom: 5px solid rgba(0,0,0,.15);
   background-color: rgba(181,32,36,.75);
-  padding: 0 32px;
+  padding: 4px 32px;
   font-size: 12px;
   letter-spacing: 2px;
-  height: 52px;
-  line-height: 52px;
+  height: 60px;
+  width: 375px;
+  line-height: 26px;
   cursor: pointer;
   font-weight: 600;
   text-transform: uppercase;
